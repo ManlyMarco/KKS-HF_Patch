@@ -12,7 +12,9 @@
 ;#define ModsDir "E:\HFpatchmaking\KK\Testbed\mods"
 #define ModsDir "F:\Games\KKS\mods"
 ;--Don't include any files in the build to make it go fast for testing
-;#define DEBUG
+#define DEBUG
+;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
+#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
 ;#define LITE
 ;---------------------------------------------------------------------
@@ -402,8 +404,7 @@ begin
     
     if Result = True then
     begin
-      if (FileExists(ExpandConstant('{app}\KoikatsuSunshineTrial.exe'))
-      or FileExists(ExpandConstant('{app}\KoikatsuSunshine.exe'))) then
+      if (FileExists(ExpandConstant('{app}\KoikatsuSunshineTrial.exe'))) then
       begin
         MsgBox('This patch is for the full version of Koikatsu Sunshine only, it does not work with Koikatsu Sunshine Trial. Get the full game and try again.', mbError, MB_OK);
         Result := False;
@@ -426,10 +427,13 @@ begin
       end
     end;
     
-    if (not FileExists(ExpandConstant('{app}\KoikatsuSunshine_Data\sharedassets1.assets'))) then
+    if Result = True then
     begin
-      if(SuppressibleMsgBox(ExpandConstant('{cm:MsgExeNotFound}'), mbError, MB_YESNO, 0) = IDNO) then
-        Result := False;
+      if (not FileExists(ExpandConstant('{app}\KoikatsuSunshine_Data\sharedassets1.assets'))) then
+      begin
+        if(SuppressibleMsgBox(ExpandConstant('{cm:MsgExeNotFound}'), mbError, MB_YESNO, 0) = IDNO) then
+          Result := False;
+      end;
     end;
 
     if Result = True then
@@ -527,9 +531,10 @@ begin
   PrepareToInstallWithProgressPage.SetProgress(0, 10);
   PrepareToInstallWithProgressPage.SetText('Verifying HF Patch files, this can take a few minutes', '');
   
+#ifndef NOVERIFY
   VerifyFiles(ExpandConstant('{srcexe}'), VerifyResult);
-#ifndef DEBUG
 #endif
+
   // If verification failed, set return of this method to it and innosetup will automatically fail the install. Still need to skip rest of the code though.
   if not (VerifyResult = '') then
   begin
