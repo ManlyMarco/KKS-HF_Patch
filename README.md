@@ -13,7 +13,7 @@ You can support development of HF Patch and many of the included plugins through
 ## What's included?
 HF Patch includes and installs by default:
 - All free updates (no need to install any updates manually)
-- Fan-made translations and automatic machine translations to fill in gaps (official translation in KK Party is not modified, only added to)
+- Fan-made translations and automatic machine translations to fill in gaps
 - Most commonly used plugins and mods, which allows you to load most character cards and scenes available online
 - Fixes for common issues with the game and mods like botched mod installs
 - Full uncensor with multiple different models
