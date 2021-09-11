@@ -9,12 +9,12 @@
 ;---------------------------------------------Current HF Patch version
 #define VERSION "1.0"
 ;-----------------------------------------Sideloader modpack directory
-;#define ModsDir "E:\HFpatchmaking\KK\Testbed\mods"
-#define ModsDir "F:\Games\KKS\mods"
+#define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
+;#define ModsDir "F:\Games\KKS\mods"
 ;--Don't include any files in the build to make it go fast for testing
-#define DEBUG
+;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
-#define NOVERIFY
+;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
 ;#define LITE
 ;---------------------------------------------------------------------
@@ -131,7 +131,7 @@ Source: "Input\BepInEx_Dev\*";    DestDir: "{app}"; Flags: ignoreversion recurse
 Source: "Input\boot.config";    DestDir: "{app}\KoikatsuSunshine_Data"; Flags: ignoreversion
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_TL\Translation_EN\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: AT\TL\EnglishTranslation
-Source: "Input\_TL\Translation_EN_userdata_jpver\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT\TL\EnglishTranslation\UserData; Check: not IsSteam
+;Source: "Input\_TL\Translation_EN_userdata_jpver\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT\TL\EnglishTranslation\UserData; Check: not IsSteam
 Source: "Input\_TL\_lang jp\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: jp
 Source: "Input\_TL\_lang ch\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: sc
 Source: "Input\_TL\_lang eng\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Languages: en
@@ -300,7 +300,7 @@ function GetDefaultDirName(Param: string): string;
 var
   str: WideString;
 begin
-  FindInstallLocation(ExpandConstant('{src}'), 'Koikatu', 'Koikatsu Party', str);
+  FindInstallLocation(ExpandConstant('{src}'), 'KoikatsuSunshine', 'KoikatsuSunshine', str);
   Result := str;
 end;
 
@@ -334,7 +334,7 @@ begin
     if(FileExists(ExpandConstant('{app}\BepInEx\0Harmony.dll')) or FileExists(ExpandConstant('{app}\BepInEx\Assembly-CSharp.dll'))) then
     begin
       SuppressibleMsgBox(ExpandConstant('{cm:MsgInvalidModsDetected}'), mbError, MB_OK, 0);
-      WizardForm.TasksList.CheckItem(WizardForm.TasksList.Items.Count - 9, coCheckWithChildren);
+      WizardForm.TasksList.CheckItem(WizardForm.TasksList.Items.Count - 7, coCheckWithChildren);
     end;
 
     if (FileExists(ExpandConstant('{app}\BepInEx\plugins\ksPlug.dll'))) then

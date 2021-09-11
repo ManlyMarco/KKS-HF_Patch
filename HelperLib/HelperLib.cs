@@ -551,7 +551,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                 {
                     foreach (var filePath in Directory.GetFiles(hld))
                     {
-                        if (!IsStandardHListFile(filePath))
+                        if (!IsStandardListFile(filePath))
                             SafeFileDelete(filePath);
                     }
                 }
