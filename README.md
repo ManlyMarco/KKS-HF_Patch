@@ -17,7 +17,7 @@ HF Patch includes and installs by default:
 - Most commonly used plugins and mods, which allows you to load most character cards and scenes available online
 - Fixes for common issues with the game and mods like botched mod installs
 - Full uncensor with multiple different models
-You can see a full list of what HF Patch contains [here](https://github.com/ManlyMarco/KK-HF_Patch/blob/master/Plugin%20Readme.md) and/or by checking contents the .iss files.
+You can see a full list of what HF Patch contains [here](https://github.com/ManlyMarco/KKS-HF_Patch/blob/master/Plugin%20Readme.md) and/or by checking contents the .iss files.
 Note that HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work. If you want to use the VR module, also install it before patching!
 
 ## Download
