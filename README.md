@@ -1,4 +1,4 @@
-![preview](https://user-images.githubusercontent.com/39247311/94689673-74a13400-032f-11eb-8162-b83ce83f2a33.png)
+![preview](https://user-images.githubusercontent.com/39247311/132988884-9594a439-1e7a-4c44-aa8b-f2e64c34752b.png)
 # HF Patch for Koikatsu Sunshine!
 An unofficial patch for [Koikatsu Sunshine](http://www.illusion.jp/preview/koikatsu_sunshine/index.php) with fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless content creation and gameplay improvements while still keeping the original, uncluttered feel of the game. All content is tested and fixed (or removed) as needed before each update, providing a stable platform for further modding. HF Patch can also repair many common issues, try it if you have issues.
 
@@ -41,7 +41,7 @@ DLCs are extra paid content and are all fully optional. Here's a simple way to i
 1. Extract the DLC/expansion with 7zip (or similar) until you find a "setup" folder that contains an "abdata" folder and some other files.
 2. You need to copy all of these folders and files into your game's install directory (you should see our own abdata folder and other files similar to what's in the DLC). Replace files when asked.
 3. Install HF Patch, even if you already have it installed. (Optional, but if you replaced any files then you should reinstall it)
-DLCs for Koikatu and EmotionCreators will not work with Koikatsu Sunshine, trying to install them might break your game (you might need to fully reinstall it to fix it).
+DLCs for Koikatu and EmotionCreators will **not** work with Koikatsu Sunshine, trying to install them is likely to break your game (you might need to fully reinstall the game to fix it afterwards).
 
 ### Solutions to common issues with the patch
 - If after installing the patch you have issues running the game, restart your PC and try to install the patch again with default settings.
@@ -61,9 +61,11 @@ If you need further help, feel free to ask in the **#help** channel on the serve
 - [Illusion Soft discord server](https://discord.gg/F3bDEFE)
 
 ### General FAQ / Notes
+- Koikatu and Koikatsu Party (KK/KKP) are 2 versions of the same game and both work with the KK HF Patch. Koikatsu Sunshine (KKS) is a completely separate sequel that works with the KKS HF Patch (this distinction is important!).
+- KKS shares many common parts with KK/KKP, but it is not directly cross-compatible in most cases - you can't use DLC or plugins for one game in the other (with some exceptions of course).
 - You can configure many plugins by Pressing F1 and then "Plugin settings". You can also see most of the plugin hotkeys in this menu (and change them).
 - You only need to install the latest version of the patch. If you installed a previous version you don't have to do anything, just install the latest version as normal.
-- Installing HF Patch will add free updates for Koikatu, which contain Studio (separate exe file). For many people this is the only mode they use (apart from character maker to make characters for use in studio), so it is highly recommended that you check it out. All of Koikatu HF Patch preview images were made in studio. You can see other people's creations and download their studio scenes from the Discord server and various card sharing boorus.
+- Installing HF Patch will add free updates, which contain Studio (separate exe file). For many people this is the only mode they use (apart from character maker to make characters for use in studio), so it is highly recommended that you check it out. All of Koikatu and Koikatsu Sunshine HF Patch preview images were made in studio. You can see other people's creations and download their studio scenes from the Discord server and various card sharing boorus.
 - HF Patch does not contain the full game, paid expansions or any other pirated content. The full game needs to be already installed for the patch to work. If you want to use the VR module, also install it before patching! All paid DLC are optional and not required, you can skip them and the patch will still work fine (some features might be disabled/unavailable).
 - You can install HF Patch over almost any game install and have it work perfectly, and you can run it again to enable/disable some plugins. This patch will automatically fix many broken game/mod installs and common issues. Just make sure to let it remove all old mods when asked.
 - It's recommended to install all content mods if you plan to download character cards - they are required by many cards and scenes. If you find a card that is showing mod missing warnings try updating Sideloader Modpacks. This can be done with [KK Manager](https://github.com/IllusionMods/KKManager).
