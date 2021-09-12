@@ -83,12 +83,12 @@ Name: "Modpack\Maps"; Description: "Maps (Additional maps for use in Studio and 
 Name: "Modpack\UncensorSelector"; Description: "KKS_UncensorSelector (Uncensors for use with UncensorSelector)"; Types: full_en full extra_en extra
 ;Name: "Modpack\Compat"; Description: "Compatibility Pack (Deprecated mods for backwards compatibility)"; Types: full_en full extra_en extra
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "Experimental"; Description: "Experimental performance optimizations (Reduces stutter. Disable in case of plugin compatibility issues)"; 
-; Name: "FIX\URL"; Description: "Use custom Character Database (fan-operated character DB - no IP blocking and mods are allowed)"; Types: full_en bare custom extra_en
+
+
 
 [Files]
 Source: "HelperLib.dll"; DestDir: "{app}"; Flags: dontcopy
-;Source: "Input\start.bat"; DestDir: "{tmp}\hfp"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "Input\start.bat"; DestDir: "{tmp}\hfp"; Flags: ignoreversion recursesubdirs createallsubdirs
 #ifndef DEBUG
 Source: "Input\DirectX\Jun2010\*"; DestDir: "{tmp}\hfp\DirectXRedist2010"; Flags: ignoreversion recursesubdirs createallsubdirs deleteafterinstall; Check: DirectXRedistNeedsInstall
 Source: "Plugin Readme.md"; DestDir: "{app}"
@@ -108,7 +108,7 @@ Source: "Input\_Patch\3_0903\DefaultData\*";                    DestDir: "{app}\
 Source: "{#ModsDir}\Sideloader Modpack\*";                      DestDir: "{app}\mods\Sideloader Modpack";                       Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General
 Source: "{#ModsDir}\Sideloader Modpack - Exclusive KKS\*";      DestDir: "{app}\mods\Sideloader Modpack - Exclusive KKS";        Flags: ignoreversion recursesubdirs; Components: Modpack\General
 ;Source: "{#ModsDir}\Sideloader Modpack - Studio\*";             DestDir: "{app}\mods\Sideloader Modpack - Studio";              Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
-Source: "{#ModsDir}\Sideloader Modpack - KKS_Maps\*";               DestDir: "{app}\mods\Sideloader Modpack - KKS_Maps";                Flags: ignoreversion recursesubdirs; Components: Modpack\Maps
+Source: "{#ModsDir}\Sideloader Modpack - KKS_Maps\*";               DestDir: "{app}\mods\Sideloader Modpack - KKS_Maps";                Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\Maps
 ;Source: "{#ModsDir}\Sideloader Modpack - Animations\*";         DestDir: "{app}\mods\Sideloader Modpack - Animations";          Flags: ignoreversion recursesubdirs; Components: Modpack\Animations
 #endif
 ;Source: "{#ModsDir}\Sideloader Modpack - Fixes\*";              DestDir: "{app}\mods\Sideloader Modpack - Fixes";               Flags: ignoreversion recursesubdirs; Components: Modpack\Fixes

@@ -10,13 +10,11 @@ Name: "KKManager";                             Description: "KKManager v0.18.0.0
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "Modding APIs (Necessary for other mods/plugins to work properly)"                     ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "API\ResourceRedirector";                Description: "XUnity Resource Redirector v1.2.0 (Modding API)"                                      ; Types: full_en full extra_en extra custom bare; Flags: fixed
-Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.4 (Collection of essential plugins)"                                 ; Types: full_en full extra_en extra custom bare; Flags: fixed
-Name: "API\KKS_BepisPlugins";                  Description: "BepisPlugins v16.7.1 (Collection of essential plugins)"                               ; Types: full_en full extra extra_en custom bare
+Name: "API\BepisPlugins";                      Description: "BepisPlugins v16.7.1 (Collection of essential plugins)"                               ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "API\KKSAPI";                            Description: "Modding API v1.25 (API needed for many plugins)"                                      ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "AT";                                    Description: "XUnity Auto Translator v1.0.2.1 (Translation loader)"                                 ; Types: full extra full_en extra_en custom
 Name: "AT\TextResourceRedirector";             Description: "Text Resource Redirector v1.4.5.1 (Needed for many translations to load)"             ; Types: full_en full extra extra_en
-Name: "AT\TranslationHelper";                  Description: "Translation Helper v1.1.0.9 (Extension for AT, needed for some translations)"         ; Types: full_en full extra extra_en
 Name: "AT\TL";                                 Description: "{cm:CompTL}"                                                                          ; Types: full_en extra_en
 Name: "AT\TL\EnglishTranslation";              Description: "Collection of English translations up to {#CurrentDate}"                              ; Types: full_en extra_en
 ; Name: "AT\TL\EnglishTranslation\UserData";     Description: "Translated cards, scenes and backgrounds (they overwrite defaults)"
@@ -27,7 +25,7 @@ Name: "UNC\Selector";                          Description: "Uncensor Selector v
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Content";                               Description: "Additional content for character and scene creation (Needed to properly load many character cards and scenes)"; Types: full_en full extra_en extra
 Name: "Content\KKSABMX";                       Description: "KKSABMX (BonemodX) v4.4.4 (Adds additional sliders to character maker)"               ; Types: full_en full extra extra_en
-Name: "Content\KKSABMX\KKS_PregnancyPlus";     Description: "KKS_PregnancyPlus v4.13 (Adds additional belly sliders in Studio and Maker)"          ; Types: full_en full extra extra_en
+Name: "Content\KKSABMX\KKS_PregnancyPlus";     Description: "KKS_PregnancyPlus v4.13 (Adds additional belly sliders in Studio and Maker)"          ; Types: extra extra_en
 Name: "Content\MoreAccessories";               Description: "MoreAccessories v2.0.2 (Unlocks accessory limit)"                                     ; Types: full_en full extra_en extra
 Name: "Content\KKS_MoreOutfits";               Description: "More Outfit Slots v1.0 (Allows characters to have more than the default number of outfit slots)"; Types: full_en full extra extra_en
 Name: "Content\KKS_MaterialEditor";            Description: "Material Editor v3.1.5 (Adds advanced material controls to maker and studio)"         ; Types: full_en full extra extra_en
@@ -63,7 +61,7 @@ Name: "Feature\EnableResize";                  Description: "Enable Resize v1.5 
 Name: "Feature\EnableFullScreenToggle";        Description: "Enable Full Screen Toggle v1.0 (Toggle full screen with alt+enter)"                   ; Types: full_en full extra extra_en
 Name: "Feature\KKS_BetterColorPicker";         Description: "Better Color Picker v2.0.2.0 (Grab color from anywhere on screen, e.g. a reference image)"; Types: full_en full extra extra_en
 Name: "Feature\DragAndDrop";                   Description: "Drag and Drop v1.2.4 (Drag cards and scenes from explorer into game window)"          ; Types: full_en full extra extra_en
-Name: "Feature\RealPOV_KoikatsuSunshine";      Description: "RealPOV v1.3.0.0 (First person camera for H)"                                         ; Types: extra extra_en
+Name: "Feature\RealPOV_KoikatsuSunshine";      Description: "RealPOV v1.3.0.0 (First person camera for H)"                                         ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
 Name: "MISC\FPS";                              Description: "FPS Counter v3.1 (Useful for performance testing)"                                    ; Types: full_en full extra extra_en
@@ -75,7 +73,7 @@ Name: "MISC\ScriptLoader";                     Description: "C# Script Loader v1
 
 [Files]
 #ifndef DEBUG
-Source: "Input\_Plugins\_out\BepInEx_x64\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\BepInEx_x64\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: BepInEx; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.ConfigurationManager\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\ConfigurationManager; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.MessageCenter\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\MessageCenter; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.CatchUnityEventExceptions\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: BepInEx\BepInEx_CatchUnityEventExceptions; Excludes: "manifest.xml"
@@ -83,8 +81,8 @@ Source: "Input\_Plugins\_out\IllusionLaunchers_Koikatsu.Sunshine\*"; DestDir: "{
 Source: "Input\_Plugins\_out\KKManager\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: KKManager; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\KKSAPI\*";                     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\KKSAPI; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\KKS_BepisPlugins\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\KKS_BepisPlugins; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\XUnity.ResourceRedirector-BepIn-5x\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\ResourceRedirector; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\KKS_BepisPlugins\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: API\BepisPlugins; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\XUnity.AutoTranslator-BepIn-5x\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_Subtitles\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT\TL\KKS_Subtitles; Excludes: "manifest.xml"
