@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.0"
+#define VERSION "1.1"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -16,7 +16,7 @@
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-;#define LITE
+#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
@@ -39,9 +39,7 @@ LZMAUseSeparateProcess=yes
 LZMADictionarySize=208576
 LZMANumFastBytes=273
 LZMANumBlockThreads=2
-#ifndef LITE
 DiskSpanning=yes
-#endif
 DefaultDirName={code:GetDefaultDirName}
 
 WindowResizable=yes
@@ -67,19 +65,19 @@ Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
 #define CurrentDate GetDateTimeString('yyyy-mm-dd', '-', ':');
 
 [Components]
-Name: "Patch"; Description: "All free updates + game repair"; Types: full_en full extra_en extra custom bare none; Flags: fixed
-;Name: "Patch\VR";                 Description: "Install/Update VR Module"
-Name: "Patch\UserData"; Description: "{cm:CompDefCards}"; Types: full_en full extra_en extra custom bare none;
+Name: "Patch";    Description: "All free updates + game repair"; Types: full_en full extra_en extra custom bare none; Flags: fixed
+Name: "Patch\VR"; Description: "Install/Update VR Module"; Types: full_en full extra_en extra custom
+;Name: "Patch\UserData"; Description: "{cm:CompDefCards}"; Types: full_en full extra_en extra custom bare none;
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Modpack"; Description: "Sideloader Modpacks {#CurrentDate} (Add additional content to the game, needs at least BepisPlugins to work)"
 #ifndef LITE
 Name: "Modpack\General"; Description: "General (Content for making characters, always recommended)"; Types: full_en full extra_en extra
-;Name: "Modpack\Studio"; Description: "Studio (Additional content for making Studio scenes)"; Types: full_en full extra_en extra
+Name: "Modpack\Studio"; Description: "Studio (Additional content for making Studio scenes)"; Types: full_en full extra_en extra
 Name: "Modpack\Maps"; Description: "Maps (Additional maps for use in Studio and H scenes)"; Types: full_en full extra_en extra
 ;Name: "Modpack\Animations"; Description: "Animations (Additional adnimations for use in Studio and Free H)"; Types: full_en full extra_en extra
 #endif
 ;Name: "Modpack\Fixes"; Description: "Fixes (Fixes to some of the official content, always recommended)"; Types: full_en full extra_en extra
-;Name: "Modpack\MaterialEditor"; Description: "KK_MaterialEditor (Materials for use with MaterialEditor)"; Types: full_en full extra_en extra
+Name: "Modpack\MaterialEditor"; Description: "KK_MaterialEditor (Materials for use with MaterialEditor)"; Types: full_en full extra_en extra
 Name: "Modpack\UncensorSelector"; Description: "KKS_UncensorSelector (Uncensors for use with UncensorSelector)"; Types: full_en full extra_en extra
 ;Name: "Modpack\Compat"; Description: "Compatibility Pack (Deprecated mods for backwards compatibility)"; Types: full_en full extra_en extra
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -96,12 +94,10 @@ Source: "Plugin Readme.md"; DestDir: "{app}"
 Source: "Input\_Patch\1_empty_ud\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs solidbreak; Components: Patch
 Source: "Input\_Patch\1_empty_ud_eng\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch; Languages: en
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Source: "Input\_Patch\2_orig\*";         Excludes: DefaultData; DestDir: "{app}";             Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\2_orig\DefaultData\*";                    DestDir: "{app}\DefaultData"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\UserData;
-Source: "Input\_Patch\3_0903\*";         Excludes: DefaultData; DestDir: "{app}";             Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\3_0903\DefaultData\*";                    DestDir: "{app}\DefaultData"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\UserData;
-;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-;Source: "Input\_Patch\VR_JP\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: Patch\VR
+Source: "Input\_Patch\2_orig\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\3_0917\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\4_studio\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\5_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Solidbreak at the start to split off the modpacks from other files in case they don't have to be installed. solidbreak splits before the files entry with it is processed
 #ifndef LITE
@@ -112,7 +108,7 @@ Source: "{#ModsDir}\Sideloader Modpack - KKS_Maps\*";               DestDir: "{a
 ;Source: "{#ModsDir}\Sideloader Modpack - Animations\*";         DestDir: "{app}\mods\Sideloader Modpack - Animations";          Flags: ignoreversion recursesubdirs; Components: Modpack\Animations
 #endif
 ;Source: "{#ModsDir}\Sideloader Modpack - Fixes\*";              DestDir: "{app}\mods\Sideloader Modpack - Fixes";               Flags: ignoreversion recursesubdirs; Components: Modpack\Fixes
-;Source: "{#ModsDir}\Sideloader Modpack - KK_MaterialEditor\*";  DestDir: "{app}\mods\Sideloader Modpack - KK_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
+Source: "{#ModsDir}\Sideloader Modpack - KK_MaterialEditor\*";  DestDir: "{app}\mods\Sideloader Modpack - KK_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
 Source: "{#ModsDir}\Sideloader Modpack - KKS_UncensorSelector\*";DestDir: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Make sure this is never missing in case the plugin archive doesn't have it included. Also solidbreak to split off the modpacks
@@ -168,7 +164,7 @@ Type: filesandordirs; Name: "{app}\BepInEx\introclips"
 #endif
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Compatibility Pack"
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Fixes"              ; Components: Modpack\Fixes
-;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - KK_MaterialEditor"  ; Components: Modpack\MaterialEditor
+Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - KK_MaterialEditor"  ; Components: Modpack\MaterialEditor
 Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Components: Modpack\UncensorSelector
 Type: filesandordirs; Name: "{app}\mods\MyMods\BetterPenetration"                ; Components: Modpack\UncensorSelector
 
@@ -548,10 +544,12 @@ begin
       
       // Close the game if it's running
       Exec('taskkill', '/F /IM CharaStudio.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
-      Exec('taskkill', '/F /IM Koikatsu Sunshine.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
+      Exec('taskkill', '/F /IM KoikatsuSunshine.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
+      Exec('taskkill', '/F /IM KoikatsuSunshine_VR.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM InitSetting.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM KKManager.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
       Exec('taskkill', '/F /IM StandaloneUpdater.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
+      Exec('taskkill', '/F /IM UnityCrashHandler64.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
 
       // Often needed after fixing permissions to unlock the files so the permissions can be written, without this access to them is always denied
       //Exec('taskkill', '/F /IM explorer.exe', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
@@ -581,10 +579,6 @@ begin
     PrepareToInstallWithProgressPage.SetProgress(8, 10);
     PrepareToInstallWithProgressPage.SetText('Changing plugin configuration', '');
     
-    // Backup plugin settings
-    if (not IsTaskSelected('delete\Config') and FileExists(ExpandConstant('{app}\BepInEx\config.ini'))) then
-      FileCopy(ExpandConstant('{app}\BepInEx\config.ini'), ExpandConstant('{app}\config.ini'), false);
-
     // Remove BepInEx folder
     if (IsTaskSelected('delete\Config') and IsTaskSelected('delete\Plugins')) then begin
       DelTree(ExpandConstant('{app}\BepInEx'), True, True, True);
@@ -596,7 +590,6 @@ begin
         DelTree(ExpandConstant('{app}\BepInEx\plugins'), True, True, True);
         DelTree(ExpandConstant('{app}\BepInEx\patchers'), True, True, True);
         DelTree(ExpandConstant('{app}\BepInEx\IPA'), True, True, True);
-        DelTree(ExpandConstant('{app}\scripts'), True, True, True);
         Exec(ExpandConstant('{cmd}'), '/c del *.dll', ExpandConstant('{app}\BepInEx'), SW_SHOW, ewWaitUntilTerminated, ResultCode);
         Exec(ExpandConstant('{cmd}'), '/c del *.dl_', ExpandConstant('{app}\BepInEx'), SW_SHOW, ewWaitUntilTerminated, ResultCode);
       end;
