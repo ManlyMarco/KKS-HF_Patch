@@ -13,6 +13,11 @@
 - Author(s):         jalil49
 - More information:  https://github.com/jalil49/Maker_Tools
 
+# Additional Skin Effects v2.0.1
+- Short description: Adds new effects to main game and studio, for example bukkake
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/Illusion_SkinEffects
+
 # Animation Controller v2.3
 - Short description: Animation Controller for Koikatsu Sunshine
 - Author(s):         DeathWeasel1337
@@ -28,7 +33,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# BepInEx v5.4.16.0
+# BepInEx v5.4.17.0
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -83,12 +88,17 @@
 - Author(s):         jim60105
 - More information:  https://blog.maki0419.com/2019/03/koikatu-coordinate-load-option.html
 
+# Cosplay Academy v0.9.1
+- Short description: Randomizes outfits for characters using folders based on how lewd they are
+- Author(s):         jalil49
+- More information:  https://github.com/jalil49/Cosplay-Academy
+
 # CrossFader v0.2.1
 - Short description: Interpolates position changes in H scenes instead of fading
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v17.0
+# Custom intro voices v18.0
 - Short description: Think Chikarin, think!
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
@@ -168,7 +178,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# HideAllUI v2.3
+# HideAllUI v2.3.2
 - Short description: Press space to hide interface
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/HideAllUI
@@ -178,12 +188,12 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# IllusionFixes v18.0.1
+# IllusionFixes v18.1
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.1.1.20074
+# IllusionLaunchers v3.2.0.20676
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -228,25 +238,40 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# KKS_PregnancyPlus v4.13
+# KKS_ObjImport v1.0.0
+- Short description: Import external .obj files directly into Studio
+- Author(s):         Njaecha
+- More information:  ???
+
+# KKS_PregnancyPlus v4.15
 - Short description: Adds additional belly sliders in Studio and Maker
 - Author(s):         thomjr
 - More information:  https://github.com/thojmr/KK_PregnancyPlus/releases
 
-# KKS_QuickAccessBox v2.4.3
+# KKS_QuickAccessBox v2.4.4
 - Short description: Search all studio items, LeftCtrl+Space
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
+
+# KKS_StudioAccessoryNames v1.1.0
+- Short description: Shows the accessory names in studio
+- Author(s):         Mantas-2155X aka 2155X
+- More information:  https://www.patreon.com/2155X
 
 # KKS_UnlockPlayerHClothes v1.4.3
 - Short description: Allows you to undress each clothing part of your player during H
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# KKSABMX (BonemodX) v4.4.4
+# KKSABMX (BonemodX) v4.4.5
 - Short description: Adds additional sliders to character maker
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
+
+# Koikatu Gameplay Tweaks and Improvements v2.2
+- Short description: Tweak and improve gameplay, fully configurable in plugin settings
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
 # Lighting Tweaks v1.0.1
 - Short description: Increases shadow resolution for better quality
@@ -263,7 +288,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
 
-# Material Editor v3.1.9
+# Material Editor v3.1.10
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -278,12 +303,17 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.26
+# Modding API v1.27
 - Short description: API needed for many plugins
 - Author(s):         ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
 
-# More Outfit Slots v1.0.2
+# More Accessory Parents v2.0
+- Short description: Adds additional attachment points for accessories
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/MoreAccessoryParents
+
+# More Outfit Slots v1.1
 - Short description: Allows characters to have more than the default number of outfit slots
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -302,6 +332,11 @@
 - Short description: Slight perf improvement of plugin UIs
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
+
+# Orthographic Camera v1.1.2
+- Short description: Orthographic camera mode, press I by default
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
 # Pose Folders v1.0
 - Short description: Folder support in studio pose list
@@ -348,7 +383,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
 
-# Skin Overlay Mod v6.0.3
+# Skin Overlay Mod v6.0.4
 - Short description: Custom body, clothes and eye textures
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -392,6 +427,11 @@
 - Short description: Needed for many translations to load
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
+
+# TreeNodeNaming v1.0.0
+- Short description: Allows the renaming of nodes in studio treeview
+- Author(s):         Njaecha
+- More information:  ???
 
 # Two Luts in Studio v1.0
 - Short description: Allows you to freely mix two studio shades (luts)

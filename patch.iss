@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.1"
+#define VERSION "1.2"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -95,7 +95,7 @@ Source: "Input\_Patch\1_empty_ud\*";     DestDir: "{app}"; Flags: ignoreversion 
 Source: "Input\_Patch\1_empty_ud_eng\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch; Languages: en
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\2_orig\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\3_0917\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\3_1008\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\4_studio\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\5_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ Source: "Input\_Patch\5_vr\*";           DestDir: "{app}"; Flags: ignoreversion 
 #ifndef LITE
 Source: "{#ModsDir}\Sideloader Modpack\*";                      DestDir: "{app}\mods\Sideloader Modpack";                       Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General
 Source: "{#ModsDir}\Sideloader Modpack - Exclusive KKS\*";      DestDir: "{app}\mods\Sideloader Modpack - Exclusive KKS";        Flags: ignoreversion recursesubdirs; Components: Modpack\General
-;Source: "{#ModsDir}\Sideloader Modpack - Studio\*";             DestDir: "{app}\mods\Sideloader Modpack - Studio";              Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
+Source: "{#ModsDir}\Sideloader Modpack - Studio\*";             DestDir: "{app}\mods\Sideloader Modpack - Studio";              Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
 Source: "{#ModsDir}\Sideloader Modpack - KKS_Maps\*";               DestDir: "{app}\mods\Sideloader Modpack - KKS_Maps";                Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\Maps
 ;Source: "{#ModsDir}\Sideloader Modpack - Animations\*";         DestDir: "{app}\mods\Sideloader Modpack - Animations";          Flags: ignoreversion recursesubdirs; Components: Modpack\Animations
 #endif
