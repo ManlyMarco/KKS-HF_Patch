@@ -593,6 +593,10 @@ begin
         Exec(ExpandConstant('{cmd}'), '/c del *.dll', ExpandConstant('{app}\BepInEx'), SW_SHOW, ewWaitUntilTerminated, ResultCode);
         Exec(ExpandConstant('{cmd}'), '/c del *.dl_', ExpandConstant('{app}\BepInEx'), SW_SHOW, ewWaitUntilTerminated, ResultCode);
       end;
+      
+      if (IsTaskSelected('delete\Config')) then begin
+        DelTree(ExpandConstant('{app}\BepInEx\config'), True, True, True);
+      end;
     end;
 
     PrepareToInstallWithProgressPage.SetProgress(9, 10);
