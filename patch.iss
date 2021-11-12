@@ -388,6 +388,22 @@ begin
   end;
 end;
 
+function IsCharValid(Value: Char): Boolean;
+begin
+  Result := Ord(Value) <= $007F;
+end;
+
+function IsDirNameValid(const Value: string): Boolean;
+var
+  I: Integer;
+begin
+  Result := False;
+  for I := 1 to Length(Value) do
+    if not IsCharValid(Value[I]) then
+      Exit;
+  Result := True;
+end;
+
 function NextButtonClick(CurPageID: Integer): Boolean;
 var
   ResultCode: Integer;
@@ -439,6 +455,14 @@ begin
         MsgBox(ExpandConstant('{cm:MsgPathTooLong}'), mbError, MB_OK);
         Result := False;
       end
+    end;
+    
+    if Result = True then
+    begin
+      if not IsDirNameValid(ExpandConstant('{app}')) then
+      begin
+        MsgBox(ExpandConstant('{cm:MsgPathNonLatin}'), mbError, MB_OK);
+      end;
     end;
 
     if Result = True then
