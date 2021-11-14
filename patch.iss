@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.2"
+#define VERSION "1.3"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -95,7 +95,7 @@ Source: "Input\_Patch\1_empty_ud\*";     DestDir: "{app}"; Flags: ignoreversion 
 Source: "Input\_Patch\1_empty_ud_eng\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch; Languages: en
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\2_orig\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\3_1008\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\3_1112\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\4_studio\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\5_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
