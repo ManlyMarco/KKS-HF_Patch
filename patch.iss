@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.3"
+#define VERSION "1.4"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=2
+LZMANumBlockThreads=4
 DiskSpanning=yes
 DefaultDirName={code:GetDefaultDirName}
 
@@ -95,7 +95,7 @@ Source: "Input\_Patch\1_empty_ud\*";     DestDir: "{app}"; Flags: ignoreversion 
 Source: "Input\_Patch\1_empty_ud_eng\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch; Languages: en
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\2_orig\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\3_1112\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\3_1210\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\4_studio\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\5_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -213,6 +213,8 @@ Type: files; Name: "{app}\doorstop_config.ini"; Components: BepInEx
 Type: files; Name: "{app}\mods\atari2.1 (normal bust).zipmod"
 Type: files; Name: "{app}\BepInEx\plugins\ksPlug.dll"
 Type: files; Name: "{app}\XInputInterface.dll"
+Type: files; Name: "{app}\BepInEx\plugins\TimelineButtonKKS.dll"
+
 
 ; Clean dlls completely to fix problems with copied/unnecessary/old dlls. All dlls are included in the patch data
 Type: filesandordirs; Name: "{app}\KoikatsuSunshine_Data\Managed"; Components: Patch
