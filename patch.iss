@@ -95,9 +95,11 @@ Source: "Input\_Patch\1_empty_ud\*";     DestDir: "{app}"; Flags: ignoreversion 
 Source: "Input\_Patch\1_empty_ud_eng\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs;            Components: Patch; Languages: en
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Patch\2_orig\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\3_0210\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\4_studio\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
-Source: "Input\_Patch\5_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
+Source: "Input\_Patch\3_studio\*";       DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\4_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
+Source: "Input\_Patch\5_0210\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
+Source: "Input\_Patch\ex_1_diff\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: EXInstalled
+Source: "Input\_Patch\ex_2_0408\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: EXInstalled
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Solidbreak at the start to split off the modpacks from other files in case they don't have to be installed. solidbreak splits before the files entry with it is processed
 #ifndef LITE
@@ -307,6 +309,11 @@ end;
 function VRInstalled(): Boolean;
 begin
   Result := FileExists(ExpandConstant('{app}\KoikatuVR_Data\resources.assets')) or FileExists(ExpandConstant('{app}\Koikatsu Party VR_Data\resources.assets'));
+end;
+
+function EXInstalled(): Boolean;
+begin
+  Result := FileExists(ExpandConstant('{app}\abdata\add70'));
 end;
 
 function IsSteam(): Boolean;
