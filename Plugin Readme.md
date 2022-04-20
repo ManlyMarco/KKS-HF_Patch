@@ -1,4 +1,4 @@
-# Accessory Clothes v1.0.1
+# Accessory Clothes v1.0.2
 - Short description: Necessary to load some accessories
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -58,7 +58,7 @@
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
-# BepisPlugins v16.9.2
+# BepisPlugins v18.2
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
@@ -68,10 +68,20 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BetterColorPicker
 
+# Boop v2.0
+- Short description: They do be bouncy
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
 # C# Script Loader v1.2.4
 - Short description: Runs user scripts from scripts folder
 - Author(s):         denikson
 - More information:  https://github.com/denikson/BepInEx.ScriptLoader
+
+# CameraFrameMask v1.1.0.0
+- Short description: Make loading characters look less glitchy
+- Author(s):         Keelhauled
+- More information:  https://github.com/Keelhauled/KeelPlugins
 
 # Catch Unity Event Exceptions v1.0
 - Short description: Prevents some bugs in plugins from affecting other plugins
@@ -88,7 +98,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# CharaStateX v1.0.3.0
+# CharaStateX v1.1.0.0
 - Short description: Can edit state of multiple charas in studio at once
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
@@ -97,6 +107,16 @@
 - Short description: In-game trainer/debugging plugin
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
+
+# Clothes To Accessories v1.0.2
+- Short description: Allows using normal clothes and hair as accessories
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# Clothing BlendShape v1.0.1
+- Short description: Adds the option to adjust the amount of squeeze for certain modded items
+- Author(s):         ???
+- More information:  ???
 
 # Clothing State Menu v3.1
 - Short description: Can undress in chara maker and in H scenes
@@ -123,6 +143,11 @@
 - Author(s):         jim60105
 - More information:  https://blog.maki0419.com/2019/03/koikatu-coordinate-load-option.html
 
+# Copy Character BodyMaterial v1.0.0
+- Short description: Copies the body material unto clothing that have part of the body mesh with them
+- Author(s):         Nakay
+- More information:  ???
+
 # Cosplay Academy v0.9.1
 - Short description: Randomizes outfits for characters using folders based on how lewd they are
 - Author(s):         jalil49
@@ -138,7 +163,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
-# DefaultParamEditor v1.1.2.0
+# DefaultParamEditor v1.2.0.0
 - Short description: Set custom default studio settings
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
@@ -188,7 +213,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Fade Adjuster v1.0.1
+# Fade Adjuster v1.0.3
 - Short description: Allows you to adjust fade color or disable the fade in and out effect
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -197,6 +222,11 @@
 - Short description: FK and IK mode for studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# FK Height Adjust UI v1.0.3
+- Short description: Makes it easier to create proper FK poses and animations by correctly height compensating
+- Author(s):         OrangeSpork
+- More information:  https://github.com/OrangeSpork/FKHeightAdjustUI
 
 # Force High Poly v1.2.2
 - Short description: Full-quality characters in story, enable in plugin settings
@@ -208,7 +238,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/FPSCounter
 
-# Free H Random v1.2
+# Free H Random v1.3
 - Short description: Adds Random Character buttons to FreeH
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -228,7 +258,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Hair Accessory Customizer v1.1.6
+# Hair Accessory Customizer v1.1.7
 - Short description: Adds advanced controls for hair accessories
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -248,7 +278,7 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# IllusionFixes v19.1
+# IllusionFixes v19.3
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -283,6 +313,11 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
+# Item Layer Edit v1.1.0.0
+- Short description: Switch objects between chara and map layers
+- Author(s):         Keelhauled
+- More information:  https://github.com/Keelhauled/KeelPlugins
+
 # KK_ExpressionControl v0.2.6
 - Short description: Allows adjusting expressions of characters(Default L)(Might have bugs)
 - Author(s):         jim60105
@@ -302,6 +337,11 @@
 - Short description: Improves how penetration looks in H scenes
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
+
+# KKS Studio Transform Orientation v1.1.2
+- Short description: Toggle between World and Local transform orientations in Studio
+- Author(s):         kkykkykky
+- More information:  https://github.com/kkykkykky/StudioTransformOrientation
 
 # KKS_Ahegao v2.0
 - Short description: Climax 3 times for ahegao
@@ -323,12 +363,12 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# KKS_ObjImport v1.2.2
+# KKS_ObjImport v1.3.0
 - Short description: Import external .obj files directly into Studio
 - Author(s):         Njaecha
 - More information:  ???
 
-# KKS_PregnancyPlus v6.2
+# KKS_PregnancyPlus v6.6
 - Short description: Adds additional belly sliders in Studio and Maker
 - Author(s):         thomjr
 - More information:  https://github.com/thojmr/KK_PregnancyPlus/releases
@@ -343,8 +383,8 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# KKS_StudioItemIK v0.1.0
-- Short description: Allows you to control FK studio items with Inverse Kinematics
+# KKS_StudioKeybinds v1.0.1
+- Short description: Allows you to change (almost) all default keybinds in Studio
 - Author(s):         Njaecha
 - More information:  ???
 
@@ -353,17 +393,27 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
+# KKS_StudioWindowResize v1.0
+- Short description: Makes studio selection windows larger so more items are visible
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
 # KKS_UnlockPlayerHClothes v1.4.4
 - Short description: Allows you to undress each clothing part of your player during H
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
+
+# KKS_VideoPlate v1.1.1
+- Short description: It's like an image plate but for videos
+- Author(s):         Njaecha
+- More information:  ???
 
 # KKS_VMDPlayPlugin v0.4.0
 - Short description: Support for MMD animations in Studio, press Ctrl+Shift+V
 - Author(s):         ???
 - More information:  ???
 
-# KKS_VR v1.0.0.0
+# KKS_VR v1.0
 - Short description: Allows you to play both the main game and studio in VR
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/KKS_VR
@@ -383,7 +433,7 @@
 - Author(s):         joan6694
 - More information:  https://www.patreon.com/joan6694
 
-# Koikatsu: Become Trap v2.2
+# Koikatsu: Become Trap v2.2.1
 - Short description: Can mark a male as a trap in maker, changes gameplay
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionTrapMods
@@ -403,6 +453,21 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
+# List Override v1.0
+- Short description: List Override for Koikatsu Sunshine
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# LockOnPlugin v2.6.2.0
+- Short description: Hotkey to make camera keep focus on character
+- Author(s):         Keelhauled
+- More information:  https://github.com/Keelhauled/KeelPlugins
+
+# LoveMachine v2.8.0
+- Short description: Adds support for buttplug.io compatible strokers and vibrators
+- Author(s):         Sauceke
+- More information:  https://github.com/Sauceke/LoveMachine
+
 # Maker Defaults v1.1
 - Short description: Set custom default character maker settings
 - Author(s):         DeathWeasel1337
@@ -413,7 +478,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
 
-# Material Editor v3.1.15
+# Material Editor v3.1.17
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -428,7 +493,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.31.2
+# Modding API v1.32
 - Short description: API needed for many plugins
 - Author(s):         ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -452,6 +517,11 @@
 - Short description: Unlocks accessory limit
 - Author(s):         joan6694
 - More information:  https://www.patreon.com/joan6694
+
+# Move Controller KOI v1.7.1.1
+- Short description: This plugin makes moving, rotating of objects in the CharaStudio easier
+- Author(s):         Mikke
+- More information:  https://github.com/Mantas-2155X/MikkePlugins
 
 # Mute In Background v1.1
 - Short description: Mute the game when it's not in focus, turn on in plugin settings
@@ -488,12 +558,17 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Pose Quick Load v1.0
+# Pose Quick Load v1.1
 - Short description: Load poses in studio by only selecting, turn on in plugin settings
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Profile v1.0.2
+# Pose Tools v1.1.1
+- Short description: Important for loading new poses with previews
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# Profile v1.0.3
 - Short description: A textbox in maker to write a character description
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -528,10 +603,15 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/RimRemover
 
-# RuntimeUnityEditor v2.6.0.0
+# RuntimeUnityEditor v2.6
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
+
+# Shader Swapper v1.0
+- Short description: Swap all shaders to the equivalent Vanilla Plus shader in maker (ctrl + P)
+- Author(s):         DeathWeasel1337
+- More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
 # Skin Overlay Mod v6.0.7
 - Short description: Custom body, clothes and eye textures
@@ -603,7 +683,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Subtitles v2.3.1
+# Subtitles v2.3.2
 - Short description: Maker and H-scene subtitles. Warning: Most of the subs are machine-translated and can be pretty bad in H-scenes
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -618,7 +698,7 @@
 - Author(s):         joan6694
 - More information:  ???
 
-# TreeNodeNaming v1.0.0
+# TreeNodeNaming v1.1.1
 - Short description: Allows the renaming of nodes in studio treeview
 - Author(s):         Njaecha
 - More information:  ???
@@ -638,7 +718,7 @@
 - Author(s):         joan6694
 - More information:  ???
 
-# XUnity Auto Translator v1.0.2.1
+# XUnity Auto Translator v4.20.1
 - Short description: Translation loader
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator

@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.5"
+#define VERSION "1.6"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -162,6 +162,7 @@ Type: filesandordirs; Name: "{app}\BepInEx\introclips"
 #ifndef LITE
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack"                      ; Components: Modpack\General
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Exclusive KK"       ; Components: Modpack\General
+;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Exclusive KK KKS"   ; Components: Modpack\General
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Studio"             ; Components: Modpack\Studio
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Maps"               ; Components: Content\ModpackMaps
 ;Type: filesandordirs; Name: "{app}\mods\Sideloader Modpack - Animations"         ; Components: Modpack\Animations
