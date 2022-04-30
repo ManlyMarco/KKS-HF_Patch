@@ -26,7 +26,8 @@ Check the [Releases](https://github.com/ManlyMarco/KKS-HF_Patch/releases) page f
 ## How to install the patch?
 Here's some video guides that might be useful. The guides are mostly universal between different games, but there might be some differences.
 - [How to get the game from DMM, install it and install HF Patch](https://youtu.be/WLoY5WCqTSw)
-- [How to install the game and HF Patch (old, partially outdated)](https://www.youtube.com/watch?v=Xece-wF86BM).
+- [How to buy, download and install the Koikatsu Sunshine EX expansion from DMM](https://youtu.be/SJ9OXedO3qI)
+- [How to install the game and HF Patch (old, partially outdated)](https://www.youtube.com/watch?v=Xece-wF86BM)
 
 ### Text guide
 1. Install Koikatsu Sunshine to a directory with no Japanese characters in its path (e.g. D:\Games\KKS)
