@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.6"
+#define VERSION "1.7"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=6
+LZMANumBlockThreads=7
 DiskSpanning=yes
 DefaultDirName={code:GetDefaultDirName}
 
@@ -99,7 +99,8 @@ Source: "Input\_Patch\3_studio\*";       DestDir: "{app}"; Flags: ignoreversion 
 Source: "Input\_Patch\4_vr\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR;
 Source: "Input\_Patch\5_0210\*";         DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch;
 Source: "Input\_Patch\ex_1_diff\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: EXInstalled
-Source: "Input\_Patch\ex_2_0408\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: EXInstalled
+Source: "Input\_Patch\ex_2_0520\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch; Check: EXInstalled
+Source: "Input\_Patch\ex_4_vr\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Patch\VR; Check: EXInstalled
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Solidbreak at the start to split off the modpacks from other files in case they don't have to be installed. solidbreak splits before the files entry with it is processed
 #ifndef LITE
