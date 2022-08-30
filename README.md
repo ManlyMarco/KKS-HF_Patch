@@ -37,6 +37,8 @@ Here's some video guides that might be useful. The guides are mostly universal b
 5. Done! You can now start the game launcher as usual and you will notice some new options straight away. You can remove the downloaded patcher files now if you want to save some space.
 It won't hurt anything if you have updated the game manually before, the patch will figure itself out.
 
+*Note: If you want to run the game under Wine/Proton (Linux, SteamOS, macOS, etc.), read [this](https://github.com/Mantas-2155X/illusion-wine-guide) and [this](https://docs.bepinex.dev/articles/advanced/proton_wine.html).*
+
 ### How to install DLCs
 DLCs are extra paid content and are all fully optional. Here's a simple way to install any downloaded DLCs (JP versions):
 1. Extract the DLC/expansion with 7zip (or similar) until you find a "setup" folder that contains an "abdata" folder and some other files.
