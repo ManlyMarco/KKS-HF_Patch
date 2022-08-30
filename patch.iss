@@ -398,6 +398,12 @@ begin
     Exec('reg', 'add HKEY_LOCAL_MACHINE\SOFTWARE\Valve\Steam\Apps\CommonRedist\DirectX\Jun2010 /v dxsetup /t REG_DWORD /d 1 /f /reg:32', ExpandConstant('{app}'), SW_HIDE, ewWaitUntilTerminated, ResultCode);
     
     PostInstallCleanUp(ExpandConstant('{app}'));
+    
+    if (not FileExists(ExpandConstant('{app}\KoikatsuSunshine_VR.exe'))) then 
+    begin
+        DelTree(ExpandConstant('{app}\KoikatsuSunshine_VR_Data'), True, True, True);
+        DelTree(ExpandConstant('{app}\manual_v'), True, True, True);
+    end;
   end;
 end;
 
