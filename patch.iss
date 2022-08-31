@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.7"
+#define VERSION "1.8"
 ;-----------------------------------------Sideloader modpack directory
 #define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=7
+LZMANumBlockThreads=6
 DiskSpanning=yes
 DefaultDirName={code:GetDefaultDirName}
 
@@ -117,7 +117,7 @@ Source: "{#ModsDir}\Sideloader Modpack - KKS_MaterialEditor\*";  DestDir: "{app}
 Source: "{#ModsDir}\Sideloader Modpack - KKS_UncensorSelector\*";DestDir: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Make sure this is never missing in case the plugin archive doesn't have it included. Also solidbreak to split off the modpacks
-;Source: "Input\_Plugins\KKS_UncensorSelector Base.zipmod"; DestDir: "{app}\mods"; Flags: ignoreversion solidbreak; Components: UNC\Selector
+Source: "Input\_Plugins\KKS_UncensorSelector_Base.zipmod"; DestDir: "{app}\mods"; Flags: ignoreversion solidbreak; Components: UNC\Selector
 #endif
 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -141,9 +141,9 @@ Source: "Input\Launcher_branding\*"; DestDir: "{app}"; Flags: ignoreversion recu
 ; Only copy our blacklist if the user doesn't already have one (onlyifdoesntexist)
 Source: "Input\itemblacklist.xml"; DestDir: "{app}\UserData\save"; Flags: onlyifdoesntexist solidbreak
 ; This config only allows BP uncensors to be choosed by random
-;Source: "Input\US_config_BP.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak; Components: UNC\Selector\KK_BetterPenetration
+Source: "Input\US_config_BP.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak; Components: UNC\Selector\KKS_BetterPenetration
 ; If previous doesn't get installed, this one should be installed instead because the file still doesn't exist
-;Source: "Input\US_config_noBP.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak
+Source: "Input\US_config_noBP.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Source: "Input\_Plugins\[Character Database][various] fixed\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: FIX\URL
 ; Source: "Input\_Misc\KoikatuSaveDataEdit\*"; DestDir: "{app}\_Tools\KoikatuSaveDataEdit"; Flags: ignoreversion recursesubdirs; Components: MISC\SaveEditor
@@ -154,7 +154,7 @@ Source: "Input\itemblacklist.xml"; DestDir: "{app}\UserData\save"; Flags: onlyif
 Type: filesandordirs; Name: "{app}\BepInEx\translation"; Components: AT\TL\EnglishTranslation
 Type: files; Name: "{app}\InitSetting.exe"
 Type: files; Name: "{app}\InitSetting.exe.config"
-Type: filesandordirs; Name: "{app}\UserData\LauncherEN"; Components: IllusionLaunchers
+Type: filesandordirs; Name: "{app}\BepInEx\LauncherEN"; Components: IllusionLaunchers
 
 ; Clean up old modpacks
 Type: filesandordirs; Name: "{app}\BepInEx\introclips"
