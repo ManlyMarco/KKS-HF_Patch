@@ -7,16 +7,16 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.8"
+#define VERSION "1.9"
 ;-----------------------------------------Sideloader modpack directory
-#define ModsDir "E:\HFpatchmaking\KKS\testbed\mods"
+#define GameDir "E:\HFpatchmaking\KKS\testbed"
 ;#define ModsDir "F:\Games\KKS\mods"
 ;--Don't include any files in the build to make it go fast for testing
 ;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-;#define LITE
+#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=6
+LZMANumBlockThreads=18
 DiskSpanning=yes
 DefaultDirName={code:GetDefaultDirName}
 
@@ -54,10 +54,10 @@ Name: "sc"; MessagesFile: "compiler:Languages\ChineseSimplified.isl"
 #include "Translations.iss"
 
 [Types]
-Name: "full_en";  Description: "{cm:fullInstall}";  Languages: en;
-Name: "full";     Description: "{cm:fullInstall}";  Languages: jp sc;
-Name: "extra_en"; Description: "{cm:extraInstall}"; Languages: en;
-Name: "extra";    Description: "{cm:extraInstall}"; Languages: jp sc;
+Name: "full_en";  Description: "{cm:fullInstall}";  Languages: en sc;
+Name: "full";     Description: "{cm:fullInstall}";  Languages: jp;
+Name: "extra_en"; Description: "{cm:extraInstall}"; Languages: en sc;
+Name: "extra";    Description: "{cm:extraInstall}"; Languages: jp;
 Name: "bare";     Description: "{cm:bareInstall}"
 Name: "none";     Description: "{cm:noneInstall}"
 Name: "custom";   Description: "{cm:customInstall}"; Flags: iscustom
@@ -104,18 +104,19 @@ Source: "Input\_Patch\ex_4_vr\*";        DestDir: "{app}"; Flags: ignoreversion 
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Solidbreak at the start to split off the modpacks from other files in case they don't have to be installed. solidbreak splits before the files entry with it is processed
 #ifndef LITE
-Source: "{#ModsDir}\Sideloader Modpack\*";                      DestDir: "{app}\mods\Sideloader Modpack";                       Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General
-Source: "{#ModsDir}\Sideloader Modpack - Exclusive KKS\*";      DestDir: "{app}\mods\Sideloader Modpack - Exclusive KKS";        Flags: ignoreversion recursesubdirs; Components: Modpack\General
-Source: "{#ModsDir}\Sideloader Modpack - Exclusive KK KKS\*";   DestDir: "{app}\mods\Sideloader Modpack - Exclusive KK KKS";        Flags: ignoreversion recursesubdirs; Components: Modpack\General
-Source: "{#ModsDir}\Sideloader Modpack - Studio\*";             DestDir: "{app}\mods\Sideloader Modpack - Studio";              Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
-Source: "{#ModsDir}\Sideloader Modpack - KKS_Maps\*";           DestDir: "{app}\mods\Sideloader Modpack - KKS_Maps";                Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\Maps
-Source: "{#ModsDir}\Sideloader Modpack - Animations\*";         DestDir: "{app}\mods\Sideloader Modpack - Animations";          Flags: ignoreversion recursesubdirs; Components: Modpack\Animations
+Source: "{#GameDir}\mods\Sideloader Modpack\*";                      DestDir: "{app}\mods\Sideloader Modpack";                       Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\General
+Source: "{#GameDir}\mods\Sideloader Modpack - Exclusive KKS\*";      DestDir: "{app}\mods\Sideloader Modpack - Exclusive KKS";        Flags: ignoreversion recursesubdirs; Components: Modpack\General
+Source: "{#GameDir}\mods\Sideloader Modpack - Exclusive KK KKS\*";   DestDir: "{app}\mods\Sideloader Modpack - Exclusive KK KKS";        Flags: ignoreversion recursesubdirs; Components: Modpack\General
+Source: "{#GameDir}\mods\Sideloader Modpack - Studio\*";             DestDir: "{app}\mods\Sideloader Modpack - Studio";              Flags: ignoreversion recursesubdirs; Components: Modpack\Studio
+Source: "{#GameDir}\mods\Sideloader Modpack - KKS_Maps\*";           DestDir: "{app}\mods\Sideloader Modpack - KKS_Maps";                Flags: ignoreversion recursesubdirs solidbreak; Components: Modpack\Maps
+Source: "{#GameDir}\mods\Sideloader Modpack - Animations\*";         DestDir: "{app}\mods\Sideloader Modpack - Animations";          Flags: ignoreversion recursesubdirs; Components: Modpack\Animations
 #endif
-Source: "{#ModsDir}\Sideloader Modpack - KKS_Fixes\*";           DestDir: "{app}\mods\Sideloader Modpack - KKS_Fixes";               Flags: ignoreversion recursesubdirs; Components: Modpack\Fixes
-Source: "{#ModsDir}\Sideloader Modpack - KK_MaterialEditor\*";   DestDir: "{app}\mods\Sideloader Modpack - KK_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
-Source: "{#ModsDir}\Sideloader Modpack - KKS_MaterialEditor\*";  DestDir: "{app}\mods\Sideloader Modpack - KKS_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
-Source: "{#ModsDir}\Sideloader Modpack - KKS_UncensorSelector\*";DestDir: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
+Source: "{#GameDir}\mods\Sideloader Modpack - KKS_Fixes\*";           DestDir: "{app}\mods\Sideloader Modpack - KKS_Fixes";               Flags: ignoreversion recursesubdirs; Components: Modpack\Fixes
+Source: "{#GameDir}\mods\Sideloader Modpack - KK_MaterialEditor\*";   DestDir: "{app}\mods\Sideloader Modpack - KK_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
+Source: "{#GameDir}\mods\Sideloader Modpack - KKS_MaterialEditor\*";  DestDir: "{app}\mods\Sideloader Modpack - KKS_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
+Source: "{#GameDir}\mods\Sideloader Modpack - KKS_UncensorSelector\*";DestDir: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Source: "{#GameDir}\BepInEx\cache\sideloader_zipmod_cache.bin*";                 DestDir: "{app}\BepinEx\cache";                      Flags: ignoreversion recursesubdirs createallsubdirs;           
 ; Make sure this is never missing in case the plugin archive doesn't have it included. Also solidbreak to split off the modpacks
 Source: "Input\_Plugins\KKS_UncensorSelector_Base.zipmod"; DestDir: "{app}\mods"; Flags: ignoreversion solidbreak; Components: UNC\Selector
 #endif
