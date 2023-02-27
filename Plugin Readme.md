@@ -38,7 +38,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Animation Loader v1.1.2.2
+# Animation Loader v1.1.3.0
 - Short description: A plugin for loading animations from Sideloader zipmods
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/AnimationLoader
@@ -263,10 +263,10 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/FPSCounter
 
-# Free H Random v2.0.0.0
-- Short description: Adds Random Character buttons to FreeH
-- Author(s):         DeathWeasel1337
-- More information:  https://github.com/DeathWeasel1337/KK_Plugins
+# Free H Defaults v2.0.0.0
+- Short description: Keeps free H selection screen settings
+- Author(s):         Keelhauled
+- More information:  https://github.com/IllusionMods/KeelPlugins
 
 # Free H Random v1.4
 - Short description: Adds Random Character buttons to FreeH
@@ -328,7 +328,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.3.0.0
+# IllusionLaunchers v3.3.2.0
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -368,7 +368,7 @@
 - Author(s):         jim60105
 - More information:  ???
 
-# KKManager v0.19.1.0
+# KKManager v0.21.4.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -378,7 +378,17 @@
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# KKSABMX (BonemodX) v5.0.2
+# KKS_AssetImport v1.1.0
+- Short description: Lets you import 3D assets into the game
+- Author(s):         NJaecha
+- More information:  https://github.com/NiggoJaecha/AssetImport
+
+# KKS_ResetRotationFix v1.0.0
+- Short description: Fixes the rotation reset button in studio
+- Author(s):         NJaecha
+- More information:  ???
+
+# KKSABMX (BonemodX) v5.0.5
 - Short description: Adds additional sliders to character maker
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
@@ -428,7 +438,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# LoveMachine v3.2.0
+# LoveMachine v3.5.0
 - Short description: Adds support for buttplug.io compatible strokers and vibrators
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -553,11 +563,6 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KK_PantyFairy
 
-# Pose Folders v1.0
-- Short description: Folder support in studio pose list
-- Author(s):         DeathWeasel1337
-- More information:  https://github.com/DeathWeasel1337/KK_Plugins
-
 # Pose Gender Restriction Unlocker v1.0
 - Short description: Removes the gender restriction on saved Studio poses
 - Author(s):         DeathWeasel1337
@@ -593,7 +598,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# QuickAccessBox v2.4.4
+# QuickAccessBox v2.4.5
 - Short description: Search all studio items, LeftCtrl+Space
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -613,7 +618,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Remove Cards To Recycle Bin v1.1.1
+# Remove Cards To Recycle Bin v1.2
 - Short description: Prevents accidentally losing cards by overwriting them
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_RemoveToRecycleBin
@@ -623,7 +628,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/RimRemover
 
-# RuntimeUnityEditor v4.0.1.1
+# RuntimeUnityEditor v4.2
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
