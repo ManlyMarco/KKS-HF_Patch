@@ -13,7 +13,7 @@
 - Author(s):         jalil49
 - More information:  https://github.com/jalil49/Maker_Tools
 
-# Additional Skin Effects v2.1.1
+# Additional Skin Effects v2.1.2
 - Short description: Adds new effects to main game and studio, for example bukkake
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_SkinEffects
@@ -77,6 +77,11 @@
 - Short description: They do be bouncy
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# BreastPhysicsController v2.1
+- Short description: Enables control of DynamicBone's some parameters for breasts
+- Author(s):         DeathWeasel
+- More information:  https://github.com/IllusionMods/BreastPhysicsController
 
 # Bulge in the pants, tent in the woods v1.0.2
 - Short description: Adds bulges to characters that pack a shlong
@@ -148,12 +153,12 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Colliders v1.2
+# Colliders v1.3
 - Short description: Add physics to characters
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Configuration Manager v17.1
+# Configuration Manager v18.0
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -173,17 +178,17 @@
 - Author(s):         jalil49
 - More information:  https://github.com/jalil49/Cosplay-Academy
 
-# CrossFader v0.2.4.1
+# CrossFader v0.2.4.2
 - Short description: Interpolates position changes in H scenes instead of fading
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v19.0
+# Custom intro voices v21
 - Short description: High on sulfuric acid
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
-# DefaultParamEditor v1.2.0.0
+# DefaultParamEditor v1.3.1.0
 - Short description: Set custom default studio settings
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
@@ -263,7 +268,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/FPSCounter
 
-# Free H Defaults v2.0.0.0
+# Free H Defaults v2.0.1.0
 - Short description: Keeps free H selection screen settings
 - Author(s):         Keelhauled
 - More information:  https://github.com/IllusionMods/KeelPlugins
@@ -323,12 +328,12 @@
 - Author(s):         IDontHaveIdea
 - More information:  https://github.com/IDontHaveIdea/IDHIStore.git
 
-# IllusionFixes v20.2
+# IllusionFixes v21.0.1
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.3.2.0
+# IllusionLaunchers v3.4.0.38361
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -353,7 +358,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Item Blacklist v1.1
+# Item Blacklist v2.0
 - Short description: Allows hiding items from maker lists, right click for options
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -368,7 +373,7 @@
 - Author(s):         jim60105
 - More information:  ???
 
-# KKManager v0.21.4.0
+# KKManager v0.22.0.1
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -393,7 +398,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.13.3.1
+# KKSPE v2.13.4
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -423,7 +428,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# Lighting Tweaks v1.0.1
+# Lighting Tweaks v1.1
 - Short description: Increases shadow resolution for better quality (Nukes performance)
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -438,7 +443,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# LoveMachine v3.5.0
+# LoveMachine v3.7.0
 - Short description: Adds support for buttplug.io compatible strokers and vibrators
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -448,7 +453,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Maker/Studio Browser Folders v2.6.2
+# Maker/Studio Browser Folders v3.0
 - Short description: Folder support in chara/scene select screens
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
@@ -483,7 +488,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Material Editor v3.1.21
+# Material Editor v3.1.22
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -518,7 +523,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# More Shop Items v2.1.1
+# More Shop Items v2.1.2
 - Short description: Adds new items with various effects to be bought in the store
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
@@ -537,6 +542,11 @@
 - Short description: Mute the game when it's not in focus, turn on in plugin settings
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
+
+# Night Darkener v1.3
+- Short description: Makes H scenes at night much darker
+- Author(s):         ManlyMarco
+- More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
 # NodesConstraints v1.2.2
 - Short description: Create custom animations in studio(possible issues
@@ -578,7 +588,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Pregnancy v2.7
+# Pregnancy v2.8.0
 - Short description: Adds pregnancy to gameplay, maker and studio
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
@@ -608,7 +618,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# RealPOV v1.3.1.0
+# RealPOV v1.3.2.0
 - Short description: First person camera for H
 - Author(s):         RealPOV.KoikatsuSunshine
 - More information:  ???
@@ -638,7 +648,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Skin Overlay Mod v6.1
+# Skin Overlay Mod v6.1.2
 - Short description: Custom body, clothes and eye textures
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -748,7 +758,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# Timeline v1.1.7
+# Timeline v1.1.8
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -778,7 +788,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Uncensor Selector v3.11.6
+# Uncensor Selector v3.11.7
 - Short description: NEEDS Koikatsu overlay mods!
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -813,7 +823,7 @@
 - Author(s):         GFanon
 - More information:  ???
 
-# XUnity Auto Translator v5.1.0
+# XUnity Auto Translator v5.2.0
 - Short description: Translation loader
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
