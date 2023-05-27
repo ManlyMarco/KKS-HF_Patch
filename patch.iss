@@ -445,14 +445,16 @@ begin
 
     if Result = True then
     begin
-      if (FileExists(ExpandConstant('{app}\HoneySelect.exe'))
-      or FileExists(ExpandConstant('{app}\PlayHome.exe'))
+      if (FileExists(ExpandConstant('{app}\EmotionCreators.exe'))
       or FileExists(ExpandConstant('{app}\Koikatu.exe'))
       or FileExists(ExpandConstant('{app}\Koikatsu Party.exe'))
-      or FileExists(ExpandConstant('{app}\EmotionCreators.exe'))
+      or FileExists(ExpandConstant('{app}\KoiKoiMonogatari.exe'))
+      or FileExists(ExpandConstant('{app}\KoiKoiMonogatariVR.exe'))
+      or FileExists(ExpandConstant('{app}\PlayHome.exe'))
+      or FileExists(ExpandConstant('{app}\HoneySelect2.exe'))
+      or FileExists(ExpandConstant('{app}\VR_Kanojo.exe'))
       or FileExists(ExpandConstant('{app}\AI-Syoujyo.exe'))
-      or FileExists(ExpandConstant('{app}\AI-Shoujo.exe'))
-      or FileExists(ExpandConstant('{app}\HoneySelect2.exe'))) then
+      or FileExists(ExpandConstant('{app}\AI-Shoujo.exe'))) then
       begin
         MsgBox(ExpandConstant('{cm:MsgDifferentGameDetected}'), mbError, MB_OK);
         Result := False;
