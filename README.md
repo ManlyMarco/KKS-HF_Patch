@@ -2,6 +2,8 @@
 # HF Patch for Koikatsu Sunshine!
 An unofficial patch for [Koikatsu Sunshine](http://www.illusion.jp/preview/koikatsu_sunshine/index.php) with fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless content creation and gameplay improvements while still keeping the original, uncluttered feel of the game. All content is tested and fixed (or removed) as needed before each update, providing a stable platform for further modding. HF Patch can also repair many common issues, try it if you have issues.
 
+Read the [full HF Patch manual](https://gist.github.com/ManlyMarco/31b78470b8e190686c7ed9686c237e3f) to learn more about what it is, what it does, how to use it, and how to solve common issues.
+
 Koikatsu can be split into two parts: character and scene creation tools (character maker and Studio), and an adventure game with story mode (it can use your custom characters, but not scenes). You can see preview videos of the game and some of the mods [here](https://www.youtube.com/channel/UClyTRNXmHHsbdUWC0hq8GrA).
 
 HF Patch does not contain the full game, paid expansions or any other pirated content. You have to buy the game and expansions separately. You can buy the Japanese version [on DMM](https://dlsoft.dmm.co.jp/detail/illusion_0035/) (English/Steam release not announced yet). You can watch a guide on how to buy and install games from DMM [here](https://youtu.be/WLoY5WCqTSw).
