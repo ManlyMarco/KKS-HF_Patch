@@ -203,15 +203,15 @@ namespace HelperLib
             try
             {
                 var bruteForcePath = new[]
-                    {
-                        new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)),
-                        new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86)),
-                    }
-                    .Concat(DriveInfo.GetDrives().AttemptMany(x => x.RootDirectory.GetDirectories()))
-                    .AttemptMany(x => x.GetDirectories())
-                    .Where(y => y.Name.Contains(gameNameSteam) || y.Name.Contains(gameName))
-                    .AttemptMany(x => x.GetFiles())
-                    .FirstOrDefault(y => y.Name.Contains(gameNameSteam) || y.Name.Contains(gameName));
+                                     {
+                                         new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles)),
+                                         new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86)),
+                                     }
+                                     .Concat(DriveInfo.GetDrives().AttemptMany(x => x.RootDirectory.GetDirectories()))
+                                     .AttemptMany(x => x.GetDirectories())
+                                     .Where(y => y.Name.Contains(gameNameSteam) || y.Name.Contains(gameName))
+                                     .AttemptMany(x => x.GetFiles())
+                                     .FirstOrDefault(y => y.Name.Contains(gameNameSteam) || y.Name.Contains(gameName));
                 if (Directory.Exists(bruteForcePath?.FullName))
                 {
                     strout = bruteForcePath.DirectoryName;
@@ -225,7 +225,7 @@ namespace HelperLib
 
             strout = "C:\\Path to the installed game";
         }
-        
+
         [DllExport("VerifyFiles", CallingConvention = CallingConvention.StdCall)]
         public static void VerifyFiles([MarshalAs(UnmanagedType.LPWStr)] string srcexe, [MarshalAs(UnmanagedType.BStr)] out string errormsg)
         {
@@ -390,7 +390,7 @@ title Fixing permissions...
 rem Get the localized version of Y/N to pass to takeown to make this work in different locales
 for /f ""tokens=1,2 delims=[,]"" %%a in ('""choice <nul 2>nul""') do set ""yes=%%a"" & set ""no=%%b""
 echo Press %yes% for yes and %no% for no
-set target={ path.Trim(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar, ' ') }
+set target={path.Trim(Path.AltDirectorySeparatorChar, Path.DirectorySeparatorChar, ' ')}
 echo off
 cls
 echo Taking ownership of %target% ...
@@ -463,20 +463,21 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                 var modsPath = Path.GetFullPath(Path.Combine(path, "mods"));
                 if (!Directory.Exists(modsPath)) return;
 
-                var acceptableDirs = new[]{
-                    "Sideloader Modpack"                        ,
-                    "Sideloader Modpack - Exclusive KK"         ,
-                    "Sideloader Modpack - Exclusive KK KKS"     ,
-                    "Sideloader Modpack - Exclusive KKS"         ,
-                    "Sideloader Modpack - Animations"           ,
-                    "Sideloader Modpack - Fixes"                ,
-                    "Sideloader Modpack - KK_MaterialEditor"    ,
-                    "Sideloader Modpack - KK_UncensorSelector"  ,
-                    "Sideloader Modpack - Maps"                 ,
-                    "Sideloader Modpack - KKS_MaterialEditor"    ,
-                    "Sideloader Modpack - KKS_UncensorSelector"  ,
-                    "Sideloader Modpack - KKS_Maps"                 ,
-                    "Sideloader Modpack - Studio"               ,
+                var acceptableDirs = new[]
+                {
+                    "Sideloader Modpack",
+                    "Sideloader Modpack - Exclusive KK",
+                    "Sideloader Modpack - Exclusive KK KKS",
+                    "Sideloader Modpack - Exclusive KKS",
+                    "Sideloader Modpack - Animations",
+                    "Sideloader Modpack - Fixes",
+                    "Sideloader Modpack - KK_MaterialEditor",
+                    "Sideloader Modpack - KK_UncensorSelector",
+                    "Sideloader Modpack - Maps",
+                    "Sideloader Modpack - KKS_MaterialEditor",
+                    "Sideloader Modpack - KKS_UncensorSelector",
+                    "Sideloader Modpack - KKS_Maps",
+                    "Sideloader Modpack - Studio",
                 };
 
                 var fullAcceptableDirs = acceptableDirs.Select(s => Path.Combine(modsPath, s) + "\\").ToArray();
@@ -680,7 +681,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                                     continue;
 
                                 mods.Add(new SideloaderModInfo(mod, guid,
-                                        manifest.Root.Element("version")?.Value));
+                                                               manifest.Root.Element("version")?.Value));
                             }
                         }
                     }
@@ -699,7 +700,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
 
                     // Prefer .zipmod extension and then longer paths (so the mod has either longer name or is arranged in a subdirectory)
                     orderedMods = orderedMods.ThenByDescending(x => FileHasZipmodExtension(x.Path))
-                        .ThenByDescending(x => x.Path.Length);
+                                             .ThenByDescending(x => x.Path.Length);
 
                     foreach (var oldMod in orderedMods.Skip(1))
                         SafeFileDelete(oldMod.Path);
@@ -721,9 +722,9 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
 
                 // Figure out the newest mod and remove all others. Favor .zipmod versions if both have the same creation date
                 var orderedVersions = modVersions.OrderByDescending(File.GetLastWriteTime)
-                    .ThenByDescending(FileHasZipmodExtension)
-                    // Prefer non-disabled mods
-                    .ThenByDescending(x => !Path.GetExtension(x).Contains("_"));
+                                                 .ThenByDescending(FileHasZipmodExtension)
+                                                 // Prefer non-disabled mods
+                                                 .ThenByDescending(x => !Path.GetExtension(x).Contains("_"));
                 foreach (var oldModPath in orderedVersions.Skip(1))
                     SafeFileDelete(oldModPath);
             }
@@ -750,8 +751,8 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
         {
             // Get rid of invalid files like .csv .zipmod or other junk that people somehow manage to put there
             return fileName.EndsWith(".unity3d", StringComparison.OrdinalIgnoreCase)
-                // Official list files only have numbers in them while all custom ones seem to have at least one letter, so this is enough
-                && IsDigitsOnly(Path.GetFileNameWithoutExtension(fileName));
+                   // Official list files only have numbers in them while all custom ones seem to have at least one letter, so this is enough
+                   && IsDigitsOnly(Path.GetFileNameWithoutExtension(fileName));
         }
 
         private static bool IsStandardHListFile(string fileName)
@@ -765,6 +766,7 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                 if (name.Length == 5 && name[2] == '_')
                     return true;
             }
+
             return false;
         }
 
@@ -791,17 +793,19 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
             }
         }
 
-        public class VersionComparer : IComparer<string>
+        public class VersionComparer : Comparer<string>
         {
-            public int Compare(string x, string y)
+            public override int Compare(string x, string y)
             {
                 return CompareVersions(x, y);
             }
 
             public static int CompareVersions(string firstVer, string secondVer)
             {
-                firstVer = firstVer?.Trim().TrimStart('v', 'V', 'r') ?? "";
-                secondVer = secondVer?.Trim().TrimStart('v', 'V', 'r') ?? "";
+                firstVer = firstVer?.Trim().TrimStart('v', 'V', 'r', 'R', ' ');
+                if (string.IsNullOrEmpty(firstVer)) firstVer = "0";
+                secondVer = secondVer?.Trim().TrimStart('v', 'V', 'r', 'R', ' ');
+                if (string.IsNullOrEmpty(secondVer)) secondVer = "0";
 
                 if (firstVer == secondVer) return 0;
 
@@ -809,8 +813,8 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                 var limit = Math.Max(version.First.Count, version.Second.Count);
                 for (var i = 0; i < limit; i++)
                 {
-                    var first = version.First.ElementAtOrDefault(i) ?? string.Empty;
-                    var second = version.Second.ElementAtOrDefault(i) ?? string.Empty;
+                    var first = version.First.ElementAtOrDefault(i) ?? 0;
+                    var second = version.Second.ElementAtOrDefault(i) ?? 0;
                     try
                     {
                         var result = first.CompareTo(second);
@@ -819,16 +823,23 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                     }
                     catch (ArgumentException)
                     {
-                        if (first is string s1 && second is string s2)
-                        {
-                            // Handle invalid characters in strings by comparing them byte by byte
-                            var result = string.CompareOrdinal(s1, s2);
-                            if (result != 0)
-                                return result;
-                        }
+                        var s1 = first.ToString();
+                        var s2 = second.ToString();
+
+                        if (s1 == "0" && s2 != "0")
+                            return -1;
+
+                        if (s2 == "0" && s1 != "0")
+                            return 1;
+
+                        // Handle invalid characters in strings by comparing them byte by byte
+                        var result = string.CompareOrdinal(s1, s2);
+                        if (result != 0)
+                            return result;
                     }
                 }
-                return version.First.Count.CompareTo(version.Second.Count);
+
+                return 0;
             }
 
             private static ICollection<IComparable> Tokenize(string version)
@@ -836,6 +847,12 @@ icacls ""%target%"" /grant *S-1-1-0:(OI)(CI)F /T /C /L /Q
                 var results = new List<IComparable>(2);
                 foreach (var part in version.Trim().Split('.', ' ', '-', ',', '_'))
                 {
+                    if (part.Length == 0)
+                    {
+                        results.Add(0);
+                        continue;
+                    }
+
                     // Handle mixed digit + letter parts by splitting them (1.0a -> 1 0 a)
                     var isDigit = char.IsDigit(part[0]);
                     var current = part[0].ToString();
