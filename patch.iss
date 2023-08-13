@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.11"
+#define VERSION "1.12"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -113,7 +113,6 @@ Source: "{#GameDir}\mods\Sideloader Modpack - Animations\*";         DestDir: "{
 #endif
 Source: "{#GameDir}\mods\Sideloader Modpack - KKS_Fixes\*";           DestDir: "{app}\mods\Sideloader Modpack - KKS_Fixes";               Flags: ignoreversion recursesubdirs; Components: Modpack\Fixes
 Source: "{#GameDir}\mods\Sideloader Modpack - KK_MaterialEditor\*";   DestDir: "{app}\mods\Sideloader Modpack - KK_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
-Source: "{#GameDir}\mods\Sideloader Modpack - KKS_MaterialEditor\*";  DestDir: "{app}\mods\Sideloader Modpack - KKS_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
 Source: "{#GameDir}\mods\Sideloader Modpack - KKS_UncensorSelector\*";DestDir: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "{#GameDir}\BepInEx\cache\sideloader_zipmod_cache.bin*";                 DestDir: "{app}\BepinEx\cache";                      Flags: ignoreversion recursesubdirs createallsubdirs;           

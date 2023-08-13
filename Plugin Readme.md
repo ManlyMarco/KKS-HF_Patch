@@ -38,7 +38,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Animation Loader v1.1.3.0
+# Animation Loader v1.1.3.3
 - Short description: A plugin for loading animations from Sideloader zipmods
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/AnimationLoader
@@ -63,7 +63,12 @@
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
-# BepisPlugins v19.1
+# BepInEx.SplashScreen v1.0.0.0
+- Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
+- Author(s):         BepInEx
+- More information:  https://github.com/BepInEx/BepInEx.SplashScreen
+
+# BepisPlugins v19.2.1
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
@@ -123,7 +128,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# Cheat Tools v3.2.1
+# Cheat Tools v3.3
 - Short description: In-game trainer/debugging plugin
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -133,7 +138,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_ClothColliders
 
-# Clothes To Accessories v1.0.2
+# Clothes To Accessories v1.0.3
 - Short description: Allows using normal clothes and hair as accessories
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -158,7 +163,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Configuration Manager v18.0
+# Configuration Manager v18.0.1
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -178,13 +183,13 @@
 - Author(s):         jalil49
 - More information:  https://github.com/jalil49/Cosplay-Academy
 
-# CrossFader v0.2.4.2
+# CrossFader v0.2.4.3
 - Short description: Interpolates position changes in H scenes instead of fading
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v21
-- Short description: High on sulfuric acid
+# Custom intro voices v22
+- Short description: Bau Bau!
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -288,7 +293,7 @@
 - Author(s):         GeBo1
 - More information:  https://github.com/GeBo1/GeBoPlugins
 
-# Graphics Settings v1.2.1
+# Graphics Settings v1.3
 - Short description: More game settings, allows better/worse quality
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
@@ -328,7 +333,7 @@
 - Author(s):         IDontHaveIdea
 - More information:  https://github.com/IDontHaveIdea/IDHIStore.git
 
-# IllusionFixes v21.0.1
+# IllusionFixes v21.1
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -358,7 +363,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Item Blacklist v2.0
+# Item Blacklist v3.0
 - Short description: Allows hiding items from maker lists, right click for options
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -373,7 +378,7 @@
 - Author(s):         jim60105
 - More information:  ???
 
-# KKManager v0.22.0.1
+# KKManager v0.22.1.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -393,17 +398,22 @@
 - Author(s):         NJaecha
 - More information:  ???
 
+# KKS_VR v1.3
+- Short description: Allows you to play both the main game and studio in VR
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/KKS_VR
+
 # KKSABMX (BonemodX) v5.0.5
 - Short description: Adds additional sliders to character maker
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.13.4
+# KKSPE v2.13.5
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
 
-# KKSUS v1.12.0
+# KKSUS v1.13.0
 - Short description: Search boxes, studio and maker improvements
 - Author(s):         joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -488,7 +498,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Material Editor v3.1.22
+# Material Editor v3.1.23
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -508,7 +518,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.35
+# Modding API v1.36
 - Short description: API needed for many plugins
 - Author(s):         ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -608,7 +618,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# QuickAccessBox v2.4.5
+# QuickAccessBox v3.0
 - Short description: Search all studio items, LeftCtrl+Space
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -638,7 +648,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/RimRemover
 
-# RuntimeUnityEditor v4.2
+# RuntimeUnityEditor v5.0
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -807,11 +817,6 @@
 - Short description: It's like an image plate but for videos
 - Author(s):         Njaecha
 - More information:  ???
-
-# Virtual reality v1.0
-- Short description: Allows you to play both the main game and studio in VR
-- Author(s):         IllusionMods
-- More information:  https://github.com/IllusionMods/KKS_VR
 
 # VMDPlayPlugin v0.4.0
 - Short description: Support for MMD animations in Studio, press Ctrl+Shift+V
