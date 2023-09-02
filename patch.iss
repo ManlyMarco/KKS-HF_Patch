@@ -245,7 +245,7 @@ Name: delete\Plugins; Description: "{cm:TaskDeletePlugins}";
 Name: delete\Config; Description: "{cm:TaskDeletePluginSettings}"; Flags: unchecked
 Name: delete\scripts; Description: "Delete old scripts"; Flags: unchecked
 Name: delete\Listfiles; Description: "{cm:TaskDeleteLst}"
-Name: fixSideloaderDupes; Description: "{cm:TaskSideDupes}";
+;Name: fixSideloaderDupes; Description: "{cm:TaskSideDupes}";
 
 [Icons]
 Name: "{userdesktop}\{cm:IconGame}"; Filename: "{app}\InitSetting.exe"; IconFilename: "{app}\InitSetting.exe"; WorkingDir: "{app}\"; Flags: createonlyiffileexists; Tasks: desktopicon; Comment: "{cm:IconGame}"
@@ -344,7 +344,7 @@ begin
     if(FileExists(ExpandConstant('{app}\BepInEx\0Harmony.dll')) or FileExists(ExpandConstant('{app}\BepInEx\Assembly-CSharp.dll'))) then
     begin
       SuppressibleMsgBox(ExpandConstant('{cm:MsgInvalidModsDetected}'), mbError, MB_OK, 0);
-      WizardForm.TasksList.CheckItem(WizardForm.TasksList.Items.Count - 7, coCheckWithChildren);
+      WizardForm.TasksList.CheckItem(WizardForm.TasksList.Items.Count - 6, coCheckWithChildren);
     end;
 
     if (FileExists(ExpandConstant('{app}\BepInEx\plugins\ksPlug.dll'))) then
@@ -389,8 +389,8 @@ begin
         RemoveJapaneseCards(ExpandConstant('{app}'));
         
     // Always clean up sideloader mods in case user already messed up
-    if IsTaskSelected('fixSideloaderDupes') then
-        RemoveSideloaderDuplicates(ExpandConstant('{app}'));
+    //if IsTaskSelected('fixSideloaderDupes') then
+    //    RemoveSideloaderDuplicates(ExpandConstant('{app}'));
         
     FixConfig(ExpandConstant('{app}'));
     WriteVersionFile(ExpandConstant('{app}'), '{#VERSION}');
