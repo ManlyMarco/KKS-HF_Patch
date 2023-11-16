@@ -58,17 +58,17 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IntroBegone
 
-# BepInEx v5.4.21.0
+# BepInEx v5.4.22.0
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
 
-# BepInEx.SplashScreen v1.0.0.0
+# BepInEx.SplashScreen v2.0.0.0
 - Short description: A loading screen on game startup with information about patchers and plugins being currently loaded
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepisPlugins v19.2.1
+# BepisPlugins v19.3
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
@@ -107,6 +107,11 @@
 - Short description: Prevents some bugs in plugins from affecting other plugins
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
+
+# Character Alpha Mask v1.0.0
+- Short description: Lets a mod to have different alpha masks for different undress states
+- Author(s):         nakay
+- More information:  ???
 
 # Character Export v1.0
 - Short description: Export all currently loaded character cards
@@ -188,8 +193,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v22
-- Short description: Bau Bau!
+# Custom intro voices v24
+- Short description: Hello
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -202,6 +207,11 @@
 - Short description: Demosaic for Koikatsu Sunshine
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# DisableHipDynamicBones v1.0
+- Short description: Lets some zipmods turn off dynamic hip bones
+- Author(s):         Unknown
+- More information:  ???
 
 # Drag and Drop v1.2.7
 - Short description: Drag cards and scenes from explorer into game window
@@ -223,7 +233,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
 
-# Enable Resize v1.5
+# Enable Resize v3.0
 - Short description: Allows resizing the game window, can mess with the UI, turn on in plugin settings
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
@@ -298,7 +308,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
 
-# H Character Adjustment v2.0
+# H Character Adjustment v2.1
 - Short description: Tweak character positions in H scenes, check settings for keybinds
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -333,12 +343,12 @@
 - Author(s):         IDontHaveIdea
 - More information:  https://github.com/IDontHaveIdea/IDHIStore.git
 
-# IllusionFixes v21.1
+# IllusionFixes v21.2.1
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.4.0.38361
+# IllusionLaunchers v3.4.1.38763
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -373,12 +383,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# KK_ExpressionControl v0.2.6
-- Short description: Allows adjusting expressions of characters(Default L)(Might have bugs)
-- Author(s):         jim60105
-- More information:  ???
-
-# KKManager v0.22.1.0
+# KKManager v0.23.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -388,32 +393,37 @@
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# KKS_AssetImport v1.1.0
+# KKS_AssetImport v1.1.1
 - Short description: Lets you import 3D assets into the game
 - Author(s):         NJaecha
 - More information:  https://github.com/NiggoJaecha/AssetImport
+
+# KKS_ExpressionControl v0.2.6
+- Short description: Allows adjusting expressions of characters(Default L)(Might have bugs)
+- Author(s):         jim60105
+- More information:  ???
 
 # KKS_ResetRotationFix v1.0.0
 - Short description: Fixes the rotation reset button in studio
 - Author(s):         NJaecha
 - More information:  ???
 
-# KKS_VR v1.3
+# KKS_VR v1.4.0
 - Short description: Allows you to play both the main game and studio in VR
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/KKS_VR
 
-# KKSABMX (BonemodX) v5.0.5
+# KKSABMX (BonemodX) v5.0.6
 - Short description: Adds additional sliders to character maker
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.13.5
+# KKSPE v2.14.0
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
 
-# KKSUS v1.13.0
+# KKSUS v1.14.0
 - Short description: Search boxes, studio and maker improvements
 - Author(s):         joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -453,7 +463,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# LoveMachine v3.7.0
+# LoveMachine v3.15.0
 - Short description: Adds support for buttplug.io compatible strokers and vibrators
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -463,7 +473,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Maker/Studio Browser Folders v3.0
+# Maker/Studio Browser Folders v3.1
 - Short description: Folder support in chara/scene select screens
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
@@ -478,7 +488,7 @@
 - Author(s):         Njaecha
 - More information:  ???
 
-# MakerCameraPresets v1.0.1
+# MakerCameraPresets v1.0.3
 - Short description: Allows you to create a set of camera presets in Maker
 - Author(s):         Njaecha
 - More information:  ???
@@ -498,7 +508,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Material Editor v3.1.23
+# Material Editor v3.3.0
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -598,6 +608,11 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
+# PostProcessingEffects v4.2
+- Short description: Adds additional post processing options in the F1 Plugins menu
+- Author(s):         RikkiBalboa
+- More information:  https://github.com/RikkiBalboa/Koikatsu-Plugins
+
 # Pregnancy v2.8.0
 - Short description: Adds pregnancy to gameplay, maker and studio
 - Author(s):         ManlyMarco
@@ -648,15 +663,35 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/RimRemover
 
-# RuntimeUnityEditor v5.0
+# RuntimeUnityEditor v5.2
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
+
+# Save_PostProcessingEffects v0.1
+- Short description: A simple plugin to save PostProcessingEffects data in the Scene
+- Author(s):         Shallty
+- More information:  ???
+
+# SaveCameraObjectFov v1.0
+- Short description: Saves FoV values to placed camera objects
+- Author(s):         RikkiBalboa
+- More information:  https://github.com/RikkiBalboa/Koikatsu-Plugins
+
+# Sex Faces v1.3.0
+- Short description: Adds the ability to set custom facial expressions to be displayed during H scenes
+- Author(s):         Sauceke
+- More information:  https://github.com/Sauceke/SexFaces/releases/tag/v1.3.0
 
 # Shader Swapper v1.3
 - Short description: Swap all shaders to the equivalent Vanilla Plus shader in maker (ctrl + P)
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# Shallty Utils v1.0
+- Short description: A utility plugin focused on enhancing Timeline to improve animator's workflows
+- Author(s):         Shallty
+- More information:  ???
 
 # Skin Overlay Mod v6.1.2
 - Short description: Custom body, clothes and eye textures
@@ -702,6 +737,11 @@
 - Short description: Adds T/Y/U/I hotkeys for manipulating items in studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# Studio Overlay Manager v1.0
+- Short description: Allows you to manage the overlay textures of character's skin and clothing inside Studio
+- Author(s):         Shallty
+- More information:  ???
 
 # Studio Reflect FK Fix v21.9.28.0
 - Short description: Fix neck issues with IK-FK conversion
@@ -828,12 +868,12 @@
 - Author(s):         GFanon
 - More information:  ???
 
-# XUnity Auto Translator v5.2.0
+# XUnity Auto Translator v5.3.0
 - Short description: Translation loader
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
 
-# XUnity Resource Redirector v2.0.0
+# XUnity Resource Redirector v2.1.0
 - Short description: Modding API
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
