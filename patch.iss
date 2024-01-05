@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.13"
+#define VERSION "1.14"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
