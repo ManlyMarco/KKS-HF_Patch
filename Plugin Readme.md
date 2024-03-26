@@ -18,7 +18,7 @@
 - Author(s):         jalil49
 - More information:  https://github.com/jalil49/Maker_Tools
 
-# Additional Skin Effects v2.1.3
+# Additional Skin Effects v2.1.4
 - Short description: Adds new effects to main game and studio, for example bukkake
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_SkinEffects
@@ -38,12 +38,17 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/Ahegao
 
+# AmazingNewAccessoryLogic v0.0.7
+- Short description: An alternative to madevil's AccessoryStateSync
+- Author(s):         Njaecha
+- More information:  https://github.com/Njaecha/ANAL
+
 # Animation Controller v2.3
 - Short description: Allows attaching IK nodes to objects to create custom animations
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Animation Loader v1.1.3.3
+# Animation Loader v1.1.3.4
 - Short description: A plugin for loading animations from Sideloader zipmods
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/AnimationLoader
@@ -52,6 +57,11 @@
 - Short description: Unlock animation speed in studio, type in the text box
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# AnimationCurveEditor v1.0.0.0
+- Short description: Scripting resource that provides a visual spline editor for Unity AnimationCurves
+- Author(s):         Njaecha
+- More information:  https://github.com/Njaecha/UnityAnimationCurveEditor
 
 # Autosave v1.1.1
 - Short description: Autosaves studio scenes and maker cards periodically
@@ -73,7 +83,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepisPlugins v19.5
+# BepisPlugins v19.6
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
@@ -87,6 +97,11 @@
 - Short description: An alternative scene loader for Studio.
 - Author(s):         Keelhauled
 - More information:  https://github.com/IllusionMods/KeelPlugins
+
+# BetterShadowQualitySettings v1.0.0.0
+- Short description: Adds shadow related settings as plugin settings
+- Author(s):         Augh
+- More information:  Discord
 
 # BetterSquirt v3.0.2
 - Short description: Improves and allows customization of squirting
@@ -238,6 +253,11 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
+# DynamicBoneDistributionEditor v1.2.2
+- Short description: Editor for Dynamic Bones offering some completely new features
+- Author(s):         Njaecha
+- More information:  https://github.com/Njaecha/DynamicBoneDistributionEditor
+
 # EditFangs v1.1.1
 - Short description: Allows adjusting the length and position of the vanilla fangs
 - Author(s):         Njaecha
@@ -363,12 +383,12 @@
 - Author(s):         IDontHaveIdea
 - More information:  https://github.com/IDontHaveIdea/IDHIStore.git
 
-# IllusionFixes v21.4.1
+# IllusionFixes v21.5
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.4.1.36418
+# IllusionLaunchers v3.4.1.69
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -438,12 +458,12 @@
 - Author(s):         Hanaaa
 - More information:  Discord
 
-# KKSABMX (BonemodX) v5.1
+# KKSABMX (BonemodX) v5.2
 - Short description: Adds additional sliders to character maker
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.16.0
+# KKSPE v2.17.0
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -477,6 +497,16 @@
 - Short description: Increases shadow resolution for better quality (Nukes performance)
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# LightingEditor v1.1.0
+- Short description: Adds more setting for light objects
+- Author(s):         Augh
+- More information:  Discord
+
+# Lightswitch v112.105.115.115
+- Short description: Adds a button to toggle map and chara light
+- Author(s):         Augh
+- More information:  Discord
 
 # List Override v1.0
 - Short description: List Override for Koikatsu Sunshine
@@ -563,7 +593,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.38
+# Modding API v1.39
 - Short description: API needed for many plugins
 - Author(s):         ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -603,7 +633,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# NodesConstraints v1.2.4
+# NodesConstraints v1.3.0
 - Short description: Create custom animations in studio(possible issues
 - Author(s):         joan6694
 - More information:  ???
@@ -748,7 +778,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IL_SliderHighlight
 
-# Stiletto v2.4.1
+# Stiletto v2.4.2
 - Short description: Support for high heels(BETA, might cause issues)
 - Author(s):         Cl33p
 - More information:  https://github.com/IllusionMods/Stiletto/releases
@@ -778,7 +808,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Studio Node Tweaks v1.0.0
+# Studio Node Tweaks v1.0.1
 - Short description: Does a few things with nodes to make it easier to pose in the studio
 - Author(s):         krypto5863
 - More information:  https://github.com/krypto5863/Illusion_StudioNodeTweaks
@@ -837,6 +867,11 @@
 - Short description: Adds more effect settings for scenes
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# StudioSkinColorControl v1.0
+- Short description: Allows controlling skin/suntan/hair color, bust softness/weight
+- Author(s):         RikkiBalboa
+- More information:  Discord
 
 # StudioWindowResize v1.1.1
 - Short description: Makes studio selection windows larger so more items are visible

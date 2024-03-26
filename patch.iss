@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.15"
+#define VERSION "1.16"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -16,7 +16,7 @@
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-#define LITE
+;#define LITE
 ;---------------------------------------------------------------------
 
 #include "_Common\Header.iss"
@@ -130,6 +130,7 @@ Source: "Input\BepInEx_config\*"; DestDir: "{app}"; Flags: ignoreversion recurse
 Source: "Input\BepInEx_Dev\*";    DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: BepInEx\Dev
 ; GC stutter fix
 Source: "Input\boot.config";    DestDir: "{app}\KoikatsuSunshine_Data"; Flags: ignoreversion
+Source: "Input\boot.config";    DestDir: "{app}\CharaStudio_Data"; Flags: ignoreversion
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_TL\Translation_EN\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: AT\TL\EnglishTranslation
 ;Source: "Input\_TL\Translation_EN_userdata_jpver\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: AT\TL\EnglishTranslation\UserData; Check: not IsSteam
