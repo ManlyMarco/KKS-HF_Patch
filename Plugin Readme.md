@@ -73,7 +73,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IntroBegone
 
-# BepInEx v5.4.22.0
+# BepInEx v5.4.23.1
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -163,7 +163,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# Cheat Tools v3.3.1
+# Cheat Tools v3.3.2
 - Short description: In-game trainer/debugging plugin
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
@@ -493,6 +493,11 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
+# Light Settings v1.0.2.5
+- Short description: Allows changing more properties of lights than available by default
+- Author(s):         Starstorm
+- More information:  https://github.com/starstormhun/StarPlugins
+
 # Lighting Tweaks v1.1
 - Short description: Increases shadow resolution for better quality (Nukes performance)
 - Author(s):         DeathWeasel1337
@@ -533,6 +538,11 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
 
+# MakerAccessorySlotNumbers v1.0.0
+- Short description: Adds the according slot number infront of the accessory name
+- Author(s):         Njaecha
+- More information:  ???
+
 # MakerAdditions v1.0.0
 - Short description: Extra features for the character maker
 - Author(s):         Mantas-2155X aka 2155X
@@ -563,12 +573,12 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Mass Shader Editor v1.0.0.3
+# Mass Shader Editor v1.1.3.5
 - Short description: Lets you edit the properties of multiple shaders at once, based on item selection
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins/
 
-# Material Editor v3.6.0
+# Material Editor v3.7.0
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -678,7 +688,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# PostProcessingEffects v4.3
+# PostProcessingEffects v4.4
 - Short description: Adds additional post processing options in the F1 Plugins menu
 - Author(s):         RikkiBalboa
 - More information:  https://github.com/RikkiBalboa/Koikatsu-Plugins
@@ -703,7 +713,7 @@
 - Author(s):         RikkiBalboa
 - More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
 
-# Pushup v1.3.2
+# Pushup v1.4.0
 - Short description: Bras affect breast shape
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -733,7 +743,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Remove Cards To Recycle Bin v1.2
+# Remove Cards To Recycle Bin v2.0
 - Short description: Prevents accidentally losing cards by overwriting them
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_RemoveToRecycleBin
@@ -767,6 +777,11 @@
 - Short description: Swap all shaders to the equivalent Vanilla Plus shader in maker (ctrl + P)
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
+
+# ShadowColorSwapper v1.2
+- Short description: Swap shadow colors to a configured value at the press of a keybind
+- Author(s):         RikkiBalboa
+- More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
 
 # Shallty Utils v1.0
 - Short description: A utility plugin focused on enhancing Timeline to improve animator's workflows (may cause issues)
@@ -933,7 +948,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Uncensor Selector v3.11.8
+# Uncensor Selector v3.12.0
 - Short description: NEEDS Koikatsu overlay mods!
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
