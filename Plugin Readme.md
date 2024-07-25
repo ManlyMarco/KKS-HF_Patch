@@ -73,7 +73,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IntroBegone
 
-# BepInEx v5.4.23.1
+# BepInEx v5.4.23.2
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
 - More information:  https://github.com/BepInEx/BepInEx
@@ -83,12 +83,12 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepisPlugins v19.7
+# BepisPlugins v20.0
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
 
-# Better Color Picker v3.0
+# Better Color Picker v3.1
 - Short description: Grab color from anywhere on screen, e.g. a reference image
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BetterColorPicker
@@ -223,8 +223,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v27
-- Short description: ambatukaaaaam
+# Custom intro voices v29.0
+- Short description: What the fuck is that
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -243,7 +243,7 @@
 - Author(s):         Unknown
 - More information:  ???
 
-# Drag and Drop v1.2.7
+# Drag and Drop v1.3.0
 - Short description: Drag cards and scenes from explorer into game window
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/DragAndDrop
@@ -383,7 +383,7 @@
 - Author(s):         IDontHaveIdea
 - More information:  https://github.com/IDontHaveIdea/IDHIStore.git
 
-# IllusionFixes v21.5.2
+# IllusionFixes v21.6
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
@@ -423,7 +423,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# KKManager v1.2.0.0
+# KKManager v1.3.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -433,7 +433,7 @@
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# KKS_AssetImport v2.0.3
+# KKS_AssetImport v2.0.5
 - Short description: Lets you import 3D assets into the game
 - Author(s):         NJaecha
 - More information:  https://github.com/NiggoJaecha/AssetImport
@@ -463,7 +463,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.17.0
+# KKSPE v2.17.2
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -478,7 +478,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionTrapMods
 
-# Koikatu Gameplay Tweaks and Improvements v2.2
+# Koikatu Gameplay Tweaks and Improvements v2.3
 - Short description: Tweak and improve gameplay, fully configurable in plugin settings
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
@@ -493,20 +493,10 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# Light Settings v1.0.2.5
+# Light Settings v1.0.3.5
 - Short description: Allows changing more properties of lights than available by default
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins
-
-# Lighting Tweaks v1.1
-- Short description: Increases shadow resolution for better quality (Nukes performance)
-- Author(s):         DeathWeasel1337
-- More information:  https://github.com/DeathWeasel1337/KK_Plugins
-
-# Lightswitch v112.105.115.115
-- Short description: Adds a button to toggle map and chara light
-- Author(s):         Augh
-- More information:  Discord
 
 # List Override v1.0
 - Short description: List Override for Koikatsu Sunshine
@@ -518,7 +508,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# LoveMachine v3.18.0
+# LoveMachine v3.19.0
 - Short description: Adds support for buttplug.io compatible strokers and vibrators
 - Author(s):         Sauceke
 - More information:  https://github.com/Sauceke/LoveMachine
@@ -568,12 +558,12 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Mass Shader Editor v1.1.3.5
+# Mass Shader Editor v1.2.0.5
 - Short description: Lets you edit the properties of multiple shaders at once, based on item selection
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins/
 
-# Material Editor v3.8.0
+# Material Editor v3.9.1
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -638,7 +628,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# NodesConstraints v1.3.2
+# NodesConstraints v1.3.3
 - Short description: Create custom animations in studio(possible issues
 - Author(s):         joan6694
 - More information:  ???
@@ -713,7 +703,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# QuickAccessBox v3.1.1.1
+# QuickAccessBox v3.2
 - Short description: Search all studio items, LeftCtrl+Space
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -773,7 +763,7 @@
 - Author(s):         RikkiBalboa
 - More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
 
-# Shallty Utils v1.0
+# Shallty Utils v1.1
 - Short description: A utility plugin focused on enhancing Timeline to improve animator's workflows (may cause issues)
 - Author(s):         Shallty
 - More information:  ???
@@ -873,11 +863,6 @@
 - Author(s):         Njaecha
 - More information:  ???
 
-# StudioMapThumbnail v1.2.0
-- Short description: Displays thumbnails when selecting a map in CharaStudio
-- Author(s):         aaaaa
-- More information:  Discord
-
 # StudioMiscSearch v1.2.0
 - Short description: Adds search bars to various Studio lists
 - Author(s):         Mantas-2155X aka 2155X
@@ -913,7 +898,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# Timeline v1.4.0
+# Timeline v1.4.1
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues)
 - Author(s):         joan6694
 - More information:  ???
