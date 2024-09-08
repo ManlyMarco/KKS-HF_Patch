@@ -73,6 +73,11 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IntroBegone
 
+# Axis Unlocker v1.1.0.5
+- Short description: Makes the manipulation axis speed and size slider's minimum and maximum values configurable
+- Author(s):         Starstorm
+- More information:  https://github.com/starstormhun/StarPlugins
+
 # BepInEx v5.4.23.2
 - Short description: Plugin framework
 - Author(s):         https://github.com/BepInEx
@@ -88,7 +93,7 @@
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
 
-# Better Color Picker v3.1
+# Better Color Picker v3.1.1
 - Short description: Grab color from anywhere on screen, e.g. a reference image
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BetterColorPicker
@@ -193,7 +198,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Colliders v1.3
+# Colliders v1.3.1
 - Short description: Add physics to characters
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -243,7 +248,7 @@
 - Author(s):         Unknown
 - More information:  ???
 
-# Drag and Drop v1.3.0
+# Drag and Drop v1.3.1
 - Short description: Drag cards and scenes from explorer into game window
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/DragAndDrop
@@ -253,7 +258,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# DynamicBoneDistributionEditor v1.3.1
+# DynamicBoneDistributionEditor v1.3.2
 - Short description: Editor for Dynamic Bones offering some completely new features
 - Author(s):         Njaecha
 - More information:  https://github.com/Njaecha/DynamicBoneDistributionEditor
@@ -277,6 +282,11 @@
 - Short description: Expands the options in the male character creator
 - Author(s):         Esu
 - More information:  https://github.com/Kokaiinum/ExpandMaleMaker
+
+# ExpressionControl v0.2.7.5
+- Short description: Allows altering expressions in-game(Hotkey L)
+- Author(s):         Starstorm
+- More information:  https://github.com/starstormhun/StarPlugins
 
 # Extra move axis in bottom right corner v2.0
 - Short description: Adds extra move gizmo in bottom right corner for studio
@@ -398,6 +408,11 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
+# IMGUITextCursorFix v1.0
+- Short description: Addresses a bug present in certain Unity versions
+- Author(s):         BepInEx
+- More information:  https://github.com/BepInEx/BepInEx.Utility
+
 # Input Hotkey Block v1.4
 - Short description: Blocks plugin keybinds while typing
 - Author(s):         BepInEx
@@ -423,12 +438,12 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# KKManager v1.3.0.0
+# KKManager v1.4.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
 
-# KKS Better Penetration v4.5.5.1
+# KKS Better Penetration v4.5.5.2
 - Short description: Improves how penetration looks in H scenes
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
@@ -437,11 +452,6 @@
 - Short description: Lets you import 3D assets into the game
 - Author(s):         NJaecha
 - More information:  https://github.com/NiggoJaecha/AssetImport
-
-# KKS_ExpressionControl v0.2.6
-- Short description: Allows adjusting expressions of characters(Default L)(Might have bugs)
-- Author(s):         jim60105
-- More information:  ???
 
 # KKS_ResetRotationFix v1.0.0
 - Short description: Fixes the rotation reset button in studio
@@ -463,7 +473,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.17.2
+# KKSPE v2.17.3
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -472,6 +482,11 @@
 - Short description: Search boxes, studio and maker improvements
 - Author(s):         joan6694
 - More information:  https://www.patreon.com/joan6694
+
+# KKUSS Sunshine Fix v1.0.0.5
+- Short description: Fixes the KKUSS shaders when used in Koikatsu Sunshine
+- Author(s):         Starstorm
+- More information:  https://github.com/starstormhun/StarPlugins
 
 # Koikatsu: Become Trap v2.2.1
 - Short description: Can mark a male as a trap in maker, changes gameplay
@@ -493,8 +508,13 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# Light Settings v1.0.3.5
+# Light Settings v1.0.4.5
 - Short description: Allows changing more properties of lights than available by default
+- Author(s):         Starstorm
+- More information:  https://github.com/starstormhun/StarPlugins
+
+# Light Toggler v1.0.0.5
+- Short description: Automatically toggles on/off lights when a parent folder or object is toggled on/off
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins
 
@@ -563,12 +583,12 @@
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins/
 
-# Material Editor v3.9.1
+# Material Editor v3.9.2.2
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Message Center v1.1.1
+# Message Center v1.1.1.1
 - Short description: Allows plugins to show messages in top left corner of the game
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.Utility
@@ -763,7 +783,7 @@
 - Author(s):         RikkiBalboa
 - More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
 
-# Shallty Utils v1.1
+# Shallty Utils v1.3
 - Short description: A utility plugin focused on enhancing Timeline to improve animator's workflows (may cause issues)
 - Author(s):         Shallty
 - More information:  ???
@@ -898,7 +918,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# Timeline v1.4.1
+# Timeline v1.4.2
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues)
 - Author(s):         joan6694
 - More information:  ???
