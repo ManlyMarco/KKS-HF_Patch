@@ -81,7 +81,7 @@ Name: "FIX";                                   Description: "{cm:CompFIX}"      
 Name: "FIX\CameraFrameMask_KoikatuSunshine";   Description: "CameraFrameMask v1.1.1.0 (Make loading characters look less glitchy)"                 ; Types: full_en full extra extra_en
 Name: "FIX\CharaStateX_KoikatuSunshine";       Description: "CharaStateX v1.1.2.0 (Can edit state of multiple charas in studio at once)"           ; Types: full_en full extra extra_en
 Name: "FIX\HideAllUI";                         Description: "HideAllUI v2.3.2 (Press space to hide interface)"                                     ; Types: full_en full extra extra_en
-Name: "FIX\IllusionFixes_KoikatsuSunshine";    Description: "IllusionFixes v21.6 (A collection of important fixes)"                                ; Types: full_en full extra extra_en
+Name: "FIX\IllusionFixes_KoikatsuSunshine";    Description: "IllusionFixes v22.0.1 (A collection of important fixes)"                              ; Types: full_en full extra extra_en
 Name: "FIX\InputHotkeyBlock";                  Description: "Input Hotkey Block v1.4 (Blocks plugin keybinds while typing)"                        ; Types: full_en full extra_en extra
 Name: "FIX\KKS_ListOverride";                  Description: "List Override v1.0 (List Override for Koikatsu Sunshine)"                             ; Types: full_en full extra extra_en
 Name: "FIX\KKS_MaleJuice";                     Description: "Male Juice v1.3 (Enables liquid textures on males)"                                   ; Types: full_en full extra extra_en
