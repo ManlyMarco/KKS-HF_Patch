@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.24"
+#define VERSION "1.25"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -40,6 +40,7 @@ LZMADictionarySize=208576
 LZMANumFastBytes=273
 LZMANumBlockThreads=8
 DiskSpanning=yes
+DiskSliceSize=4294967295
 DefaultDirName={code:GetDefaultDirName}
 
 WindowResizable=yes
@@ -145,6 +146,7 @@ Source: "Input\itemblacklist.xml"; DestDir: "{app}\UserData\save"; Flags: onlyif
 Source: "Input\US_config_BP.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak; Components: UNC\Selector\KKS_BetterPenetration
 ; If previous doesn't get installed, this one should be installed instead because the file still doesn't exist
 Source: "Input\US_config_noBP.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak
+Source: "Input\marco.kkapi.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "marco.kkapi.cfg"; Flags: onlyifdoesntexist solidbreak
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Source: "Input\_Plugins\[Character Database][various] fixed\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: FIX\URL
 ; Source: "Input\_Misc\KoikatuSaveDataEdit\*"; DestDir: "{app}\_Tools\KoikatuSaveDataEdit"; Flags: ignoreversion recursesubdirs; Components: MISC\SaveEditor
@@ -221,6 +223,9 @@ Type: files; Name: "{app}\mods\atari2.1 (normal bust).zipmod"
 Type: files; Name: "{app}\BepInEx\plugins\ksPlug.dll"
 Type: files; Name: "{app}\XInputInterface.dll"
 Type: files; Name: "{app}\BepInEx\plugins\TimelineButtonKKS.dll"
+
+; Bad settings that can't be easily reset
+Type: files; Name: "{app}\BepInEx\config\org.bepinex.plugins.KKS_PostProcessingEffectsV3.cfg"
 
 
 ; Clean dlls completely to fix problems with copied/unnecessary/old dlls. All dlls are included in the patch data
