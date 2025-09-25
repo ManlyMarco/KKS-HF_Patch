@@ -12,7 +12,7 @@
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
 ;--Don't include any files in the build to make it go fast for testing
-;#define DEBUG
+#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
@@ -23,10 +23,10 @@
 [Setup]
 #ifndef LITE
 AppName=HF Patch for Koikatsu Sunshine
-OutputBaseFilename=Koikatsu Sunshine HF Patch v{#VERSION}
+OutputBaseFilename=Koikatu Sunshine HF Patch v{#VERSION}
 #else
 AppName=HF Patch for Koikatsu Sunshine (Light Version)
-OutputBaseFilename=Koikatsu Sunshine HF Patch v{#VERSION} Light Version
+OutputBaseFilename=Koikatu Sunshine HF Patch v{#VERSION} Light Version
 #endif
 ArchitecturesInstallIn64BitMode=x64
 CloseApplications=yes
@@ -49,7 +49,7 @@ WizardSizePercent=120,150
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
 Name: "jp"; MessagesFile: "compiler:Languages\Japanese.isl"
-Name: "sc"; MessagesFile: "compiler:Languages\ChineseSimplified.isl"
+Name: "sc"; MessagesFile: "compiler:Languages\Japanese.isl"
 
 #include "Translations.iss"
 
@@ -86,7 +86,7 @@ Name: "Modpack\UncensorSelector"; Description: "KKS_UncensorSelector (Uncensors 
 
 [Files]
 Source: "HelperLib.dll"; DestDir: "{app}"; Flags: dontcopy
-Source: "Input\start.bat"; DestDir: "{tmp}\hfp"; Flags: ignoreversion recursesubdirs createallsubdirs
+;Source: "Input\start.bat"; DestDir: "{tmp}\hfp"; Flags: ignoreversion recursesubdirs createallsubdirs
 #ifndef DEBUG
 Source: "Input\DirectX\Jun2010\*"; DestDir: "{tmp}\hfp\DirectXRedist2010"; Flags: ignoreversion recursesubdirs createallsubdirs deleteafterinstall; Check: DirectXRedistNeedsInstall
 Source: "Plugin Readme.md"; DestDir: "{app}"
@@ -424,9 +424,53 @@ begin
   Result := True;
 end;
 
+var
+  CustomComponentsPage: TWizardPage;
+  RecommendedCheck: TCheckBox;
+  OptionalCheck: TCheckBox;
+  ExperimentalCheck: TCheckBox;
+  ComponentsList: TNewCheckListBox;
+
+
+function SplitString(const S: String; const Delimiter: String): TArrayOfString;
+var
+  i, p, n: Integer;
+begin
+  n := 0;
+  p := 1;
+  SetArrayLength(Result, 0);
+  while True do
+  begin
+    i := Pos(Delimiter, Copy(S, p, Length(S) - p + 1));
+    if i = 0 then
+    begin
+      SetArrayLength(Result, n + 1);
+      Result[n] := Copy(S, p, Length(S) - p + 1);
+      Break;
+    end
+    else
+    begin
+      SetArrayLength(Result, n + 1);
+      Result[n] := Copy(S, p, i - 1);
+      p := p + i + Length(Delimiter) - 1;
+      n := n + 1;
+    end;
+  end;
+end;
+
+
+procedure DeselectAllComponents();
+var i: Integer;
+begin
+  for i := 0 to WizardForm.ComponentsList.Items.Count-1 do
+    WizardSelectComponents('!' + WizardForm.ComponentsList.Items[i]);
+end;
+
+
 function NextButtonClick(CurPageID: Integer): Boolean;
 var
   ResultCode: Integer;
+  i: Integer; // <-- Declare i here
 begin
   // allow the setup turning to the next page
   Result := True;
@@ -540,15 +584,131 @@ begin
     //  WizardSelectComponents('Patch\VR');
     //end;
   end;
+  
+  
+  if CurPageID = CustomComponentsPage.ID then
+  begin
+    // Deselect all components first
+    DeselectAllComponents();
+    // Select checked components
+    for i := 0 to ComponentsList.Items.Count-1 do
+      if ComponentsList.Checked[i] then
+        WizardSelectComponents(ComponentsList.ItemCaption[i]);
+  end;
 end;
 
 
-procedure VerifyFiles(srcexe: String; out errormsg: WideString);
-external 'VerifyFiles@files:HelperLib.dll stdcall';
+function HasType(types: String; search: String): Boolean;
+begin
+  Result := (Pos(search, types) > 0);
+end;
+
+function GetComponentTypesByName(name: String): String;
+begin // TODO: No way to get types from code it seems, would require hardcoding somehow
+  if name = 'Patch' then Result := 'full_en full extra_en extra custom bare none'
+  else if name = 'Patch\VR' then Result := 'full_en full extra_en extra custom'
+  else if name = 'Modpack' then Result := ''
+  else if name = 'Modpack\General' then Result := 'full_en full extra_en extra'
+  else if name = 'Modpack\Studio' then Result := 'full_en full extra_en extra'
+  else if name = 'Modpack\Maps' then Result := 'full_en full extra_en extra'
+  else if name = 'Modpack\Animations' then Result := 'full_en full extra_en extra'
+  else if name = 'Modpack\Fixes' then Result := 'full_en full extra_en extra'
+  else if name = 'Modpack\MaterialEditor' then Result := 'full_en full extra_en extra'
+  else if name = 'Modpack\UncensorSelector' then Result := 'full_en full extra_en extra'
+  else Result := '';
+end;
+
+procedure UpdateComponentList();
+var
+  i, j: Integer;
+  showRecommended, showOptional, showExperimental: Boolean;
+  types: String;
+  name: String;
+  typeList: TArrayOfString;
+  isRecommended, isOptional, isExperimental: Boolean;
+begin
+  showRecommended := RecommendedCheck.Checked;
+  showOptional := OptionalCheck.Checked;
+  showExperimental := ExperimentalCheck.Checked;
+
+  ComponentsList.Items.Clear;
+  for i := 0 to WizardForm.ComponentsList.Items.Count-1 do
+  begin
+    name := WizardForm.ComponentsList.Items[i];
+    types := GetComponentTypesByName(name);
+    typeList := SplitString(types, ' ');
+    isRecommended := False;
+    isOptional := False;
+    isExperimental := False;
+    for j := 0 to GetArrayLength(typeList)-1 do
+    begin
+      if (typeList[j] = 'full_en') or (typeList[j] = 'full') then
+        isRecommended := True;
+      if (typeList[j] = 'extra_en') or (typeList[j] = 'extra') then
+        isOptional := True;
+    end;
+    isExperimental := (Trim(types) = '');
+
+    if ((showRecommended and isRecommended) or
+        (showOptional and isOptional) or
+        (showExperimental and isExperimental)) then
+      ComponentsList.AddCheckBox(name, '', 0, False, True, False, False, nil);
+  end;
+end;
+
+procedure OnFilterChanged(Sender: TObject);
+begin
+  UpdateComponentList();
+end;
+
+procedure InitializeCustomComponents;
+begin
+  // ...existing code...
+  CustomComponentsPage := CreateCustomPage(wpSelectDir, 'Select Components', 'Choose which components to install.');
+
+  RecommendedCheck := TCheckBox.Create(CustomComponentsPage);
+  RecommendedCheck.Parent := CustomComponentsPage.Surface;
+  RecommendedCheck.Top := 16;
+  RecommendedCheck.Left := 8;
+  RecommendedCheck.Width := 200;
+  RecommendedCheck.Caption := 'Show Recommended';
+  RecommendedCheck.Checked := True;
+  RecommendedCheck.OnClick := @OnFilterChanged;
+
+  OptionalCheck := TCheckBox.Create(CustomComponentsPage);
+  OptionalCheck.Parent := CustomComponentsPage.Surface;
+  OptionalCheck.Top := RecommendedCheck.Top + 24;
+  OptionalCheck.Left := 8;
+  OptionalCheck.Width := 200;
+  OptionalCheck.Caption := 'Show Optional';
+  OptionalCheck.Checked := True;
+  OptionalCheck.OnClick := @OnFilterChanged;
+
+  ExperimentalCheck := TCheckBox.Create(CustomComponentsPage);
+  ExperimentalCheck.Parent := CustomComponentsPage.Surface;
+  ExperimentalCheck.Top := OptionalCheck.Top + 24;
+  ExperimentalCheck.Left := 8;
+  ExperimentalCheck.Width := 200;
+  ExperimentalCheck.Caption := 'Show Experimental';
+  ExperimentalCheck.Checked := False;
+  ExperimentalCheck.OnClick := @OnFilterChanged;
+
+  ComponentsList := TNewCheckListBox.Create(CustomComponentsPage);
+  ComponentsList.Parent := CustomComponentsPage.Surface;
+  ComponentsList.Top := ExperimentalCheck.Top + 32;
+  ComponentsList.Left := 8;
+  ComponentsList.Width := CustomComponentsPage.Surface.Width - 16;
+  ComponentsList.Height := 200;
+
+  UpdateComponentList();
+end;
+
+
 
 // Set up a custom prepare to install page with progress
 var
   PrepareToInstallWithProgressPage : TOutputProgressWizardPage;
+
 procedure InitializeWizard;
 var
   A: AnsiString;
@@ -559,7 +719,14 @@ begin
   StringChange(S, '[name]', '{#NAME} HF Patch');
   A := S;
   PrepareToInstallWithProgressPage := CreateOutputProgressPage(SetupMessage(msgWizardPreparing), A);
+  
+  InitializeCustomComponents();
 end;
+
+
+
+procedure VerifyFiles(srcexe: String; out errormsg: WideString);
+external 'VerifyFiles@files:HelperLib.dll stdcall';
 
 function PrepareToInstall(var NeedsRestart: Boolean): String;
 var
