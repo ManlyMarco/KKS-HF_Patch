@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.25"
+#define VERSION "1.26"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=8
+LZMANumBlockThreads=9
 DiskSpanning=yes
 DiskSliceSize=4294967295
 DefaultDirName={code:GetDefaultDirName}
@@ -245,7 +245,11 @@ Root: HKCU; Subkey: "Software\Illusion\KoikatsuSunshine\KoikatsuSunshine"; Value
 [Tasks]
 Name: desktopicon; Description: "{cm:TaskIcon}"; Flags: unchecked
 Name: delete; Description: "{cm:TaskDelete}";
+#ifndef LITE
 Name: delete\Sidemods; Description: "{cm:TaskDeleteSide}"
+#else
+Name: delete\Sidemods; Description: "{cm:TaskDeleteSide}"; Flags: unchecked
+#endif
 Name: delete\Plugins; Description: "{cm:TaskDeletePlugins}";
 Name: delete\Config; Description: "{cm:TaskDeletePluginSettings}"; Flags: unchecked
 Name: delete\scripts; Description: "Delete old scripts"; Flags: unchecked
