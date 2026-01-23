@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.26"
+#define VERSION "1.27"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=9
+LZMANumBlockThreads=8
 DiskSpanning=yes
 DiskSliceSize=4294967295
 DefaultDirName={code:GetDefaultDirName}
@@ -205,6 +205,9 @@ Type: files; Name: "{app}\KoikatuVR_Data\output_log.txt"
 Type: files; Name: "{app}\Koikatsu Party_Data\output_log.txt"
 ; Yikes, someone extracted a sideloader mod...
 Type: files; Name: "{app}\manifest.xml"
+
+; Problematic config files
+Type: files; Name: "{app}\BepInEx\config\com.joan6694.illusionplugins.videoexport.cfg"
 
 ; Just in case. Also resets any hash caches
 Type: filesandordirs; Name: "{app}\[UTILITY] KKManager"; Components: KKManager
