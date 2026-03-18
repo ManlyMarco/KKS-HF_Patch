@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.27"
+#define VERSION "1.28"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define ModsDir "F:\Games\KKS\mods"
@@ -38,7 +38,7 @@ LZMAUseSeparateProcess=yes
 ;LZMADictionarySize=208576
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=8
+LZMANumBlockThreads=16
 DiskSpanning=yes
 DiskSliceSize=4294967295
 DefaultDirName={code:GetDefaultDirName}
@@ -147,6 +147,7 @@ Source: "Input\US_config_BP.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "
 ; If previous doesn't get installed, this one should be installed instead because the file still doesn't exist
 Source: "Input\US_config_noBP.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "com.deathweasel.bepinex.uncensorselector.cfg"; Flags: onlyifdoesntexist solidbreak
 Source: "Input\marco.kkapi.cfg"; DestDir: "{app}\BepInEx\config"; DestName: "marco.kkapi.cfg"; Flags: onlyifdoesntexist solidbreak
+Source: "Input\AniMorph.ABMX.cfg";   DestDir: "{app}\BepInEx\config"; DestName: "AniMorph.ABMX.cfg"; Flags: solidbreak; Components: Content\AnisotropicMorph
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Source: "Input\_Plugins\[Character Database][various] fixed\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs; Components: FIX\URL
 ; Source: "Input\_Misc\KoikatuSaveDataEdit\*"; DestDir: "{app}\_Tools\KoikatuSaveDataEdit"; Flags: ignoreversion recursesubdirs; Components: MISC\SaveEditor
