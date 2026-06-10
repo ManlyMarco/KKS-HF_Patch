@@ -1,4 +1,4 @@
-![preview](https://user-images.githubusercontent.com/39247311/132988884-9594a439-1e7a-4c44-aa8b-f2e64c34752b.png)
+![preview](header.png)
 # HF Patch for Koikatsu Sunshine!
 An unofficial patch for [Koikatsu Sunshine](https://wiki.anime-sharing.com/hgames/index.php?title=Koikatsu_Sunshine) with fan-made English translations and essential mods. It will allow you to load all character cards and scenes and give you countless content creation and gameplay improvements while still keeping the original, uncluttered feel of the game. All content is tested and fixed (or removed) as needed before each update, providing a stable platform for further modding. HF Patch can also repair many common issues, try it if you have issues.
 
