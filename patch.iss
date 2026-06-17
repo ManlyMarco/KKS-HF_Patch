@@ -7,12 +7,12 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "1.28"
+#define VERSION "2.0"
 ;-----------------------------------------Sideloader modpack directory
-;#define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
-#define GameDir "F:\Games\KoikatsuP"
+#define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
+;#define GameDir "F:\Games\KoikatsuP"
 ;--Don't include any files in the build to make it go fast for testing
-#define DEBUG
+;#define DEBUG
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
@@ -49,7 +49,7 @@ LZMAUseSeparateProcess=yes
 ;Usual settings: 208576 273 8
 LZMADictionarySize=208576
 LZMANumFastBytes=273
-LZMANumBlockThreads=8
+LZMANumBlockThreads=16
 DiskSpanning=yes
 DiskSliceSize=4294967295
 
@@ -148,6 +148,8 @@ Source: "Input\US_config_BP.cfg";                   DestDir: "{app}\BepInEx\conf
 ; Other default config
 Source: "Input\marco.kkapi.cfg";                    DestDir: "{app}\BepInEx\config"; DestName: "marco.kkapi.cfg";        Flags: onlyifdoesntexist
 Source: "Input\AniMorph.ABMX.cfg";                  DestDir: "{app}\BepInEx\config"; DestName: "AniMorph.ABMX.cfg";      Flags: solidbreak;   Components: Content\AnisotropicMorph
+Source: "Input\essuhauled.animationloader.cfg";                  DestDir: "{app}\BepInEx\config"; DestName: "essuhauled.animationloader.cfg";      Flags: solidbreak;   Components: API\AnimationLoader_KoikatsuSunshine
+Source: "Input\KK_PregnancyPlus.cfg";                  DestDir: "{app}\BepInEx\config"; DestName: "KK_PregnancyPlus.cfg";      Flags: solidbreak;   Components: Content\KKSABMX\KKS_PregnancyPlus
 #endif
 
 [InstallDelete]

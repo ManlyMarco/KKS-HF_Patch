@@ -3,7 +3,7 @@
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins
 
-# Acc Mover v1.3.2.11
+# Acc Mover v1.3.3.11
 - Short description: Revamps the Transfer tab of the accessories panel, letting you copy, move, or compact accessories
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins
@@ -13,7 +13,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Accessory Clothes v1.0.3
+# Accessory Clothes v1.0.4
 - Short description: Necessary to load some accessories
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -78,6 +78,11 @@
 - Author(s):         lotsofbears
 - More information:  https://github.com/lotsofbears/KK_AnisotropicMorph
 
+# Auto Keyframe v1.3.0.0
+- Short description: Automatically updates any keyframes in Timeline that you change
+- Author(s):         Rinu Nalo
+- More information:  KK Discord/
+
 # Autosave v3.0
 - Short description: Autosaves studio scenes and maker cards periodically
 - Author(s):         DeathWeasel1337
@@ -103,7 +108,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepisPlugins v21.1.2.1
+# BepisPlugins v21.1.3
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
@@ -138,6 +143,11 @@
 - Author(s):         lotsofbears
 - More information:  https://gitgoon.dev/lotsofbears/KK_BirbExGauge
 
+# Blink v1.0.0
+- Short description: Modifies character's blinking (aimed at VR)
+- Author(s):         lotsofbears
+- More information:  https://github.com/obedientGolem/KoikPlugins
+
 # Boop v2.1
 - Short description: They do be bouncy
 - Author(s):         DeathWeasel1337
@@ -147,6 +157,11 @@
 - Short description: Enables control of DynamicBone's some parameters for breasts
 - Author(s):         DeathWeasel
 - More information:  https://github.com/IllusionMods/BreastPhysicsController
+
+# Breath (Kokyu) v1.0.0
+- Short description: Adds a breathing effect to characters
+- Author(s):         lotsofbears
+- More information:  https://github.com/obedientGolem/KoikPlugins
 
 # Bulge in the pants, tent in the woods v1.0.2
 - Short description: Adds bulges to characters that pack a shlong
@@ -203,6 +218,11 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
 
+# ClickToSelect v1.2.0
+- Short description: Allows selecting items in studio by clicking on them
+- Author(s):         ziglo
+- More information:  https://www.patreon.com/ziglomods/posts/clicktoselect-155523948
+
 # Cloth colliders support v1.1
 - Short description: Allows zipmods to easily add cloth physics to clothes
 - Author(s):         ManlyMarco
@@ -243,6 +263,11 @@
 - Author(s):         RinuNalo
 - More information:  KK Discord
 
+# Compositor v1.2.0
+- Short description: A Blender-like node compositor, that runs insideStudio
+- Author(s):         RinuNalo
+- More information:  KK Discord
+
 # Configuration Manager v18.4.1
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
@@ -263,8 +288,8 @@
 - Author(s):         Sabakan
 - More information:  ???
 
-# Custom intro voices v34.0
-- Short description: Gitgoon
+# Custom intro voices v35.0
+- Short description: Satana perkele
 - Author(s):         ManlyMarco
 - More information:  https://www.youtube.com/watch?v=SZBQ4lQFqvw
 
@@ -428,12 +453,12 @@
 - Author(s):         IDontHaveIdea
 - More information:  https://github.com/IDontHaveIdea/IDHIStore.git
 
-# IllusionFixes v22.1
+# IllusionFixes v22.2
 - Short description: A collection of important fixes
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.4.1.69
+# IllusionLaunchers v3.5.1.0
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -478,7 +503,7 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
-# KKManager v1.8.0.0
+# KKManager v1.11.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/KKManager
@@ -518,7 +543,7 @@
 - Author(s):         Starstorm
 - More information:  KK Discord
 
-# KKS_VR v2.5
+# KKS_VR v2.7
 - Short description: Allows you to play both the main game and studio in VR
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/KKS_VR
@@ -533,12 +558,12 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KKABMX
 
-# KKSPE v2.21.4
+# KKSPE v2.21.5
 - Short description: Advanced studio controls(Has issues)
 - Author(s):         joan6694
 - More information:  ???
 
-# KKSUS v1.15
+# KKSUS v1.15.0.1
 - Short description: Search boxes, studio and maker improvements
 - Author(s):         joan6694
 - More information:  https://www.patreon.com/joan6694
@@ -653,7 +678,7 @@
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins/
 
-# Material Editor v4.0.2
+# Material Editor v4.0.3
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -713,6 +738,11 @@
 - Author(s):         Mikke
 - More information:  https://github.com/Mantas-2155X/MikkePlugins
 
+# MuneRestoration v1.0.0
+- Short description: Restores the Mune00 bones which are the root FK handles for breasts in studio
+- Author(s):         Freelancer604
+- More information:  https://www.patreon.com/posts/154779660
+
 # Mute In Background v1.1
 - Short description: Mute the game when it's not in focus, turn on in plugin settings
 - Author(s):         BepInEx
@@ -723,7 +753,7 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/KoikatuGameplayMods
 
-# NodesConstraints v1.6.2
+# NodesConstraints v1.6.3
 - Short description: Create custom animations in studio(possible issues
 - Author(s):         joan6694
 - More information:  ???
@@ -813,7 +843,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# QuickAccessBox v3.4
+# QuickAccessBox v3.4.1
 - Short description: Search all studio items, LeftCtrl+Space
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/QuickAccessBox
@@ -828,6 +858,11 @@
 - Author(s):         IHaveNoIdea
 - More information:  https://github.com/IDontHaveIdea/RandomCoordinate
 
+# Random Status v1.0.0
+- Short description: Randomly changes the statuses of heroines in each period (Permanently)
+- Author(s):         Inabaeiji
+- More information:  https://github.com/Inabaeiji/RandomStatus
+
 # RealPOV v1.4.1.1
 - Short description: First person camera for H
 - Author(s):         RealPOV.KoikatsuSunshine
@@ -837,6 +872,11 @@
 - Short description: Prevents accidentally losing cards by overwriting them
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_RemoveToRecycleBin
+
+# RenameStuff v1.2.0
+- Short description: Allows renaming anything in your workspace window (right click)
+- Author(s):         ziglo
+- More information:  https://www.patreon.com/ziglomods/posts/renamestuff-for-154013619
 
 # Rim Remover v1.2
 - Short description: Can disable rim light for a flat game look
@@ -893,7 +933,7 @@
 - Author(s):         Shallty
 - More information:  ???
 
-# Skin Overlay Mod v7.1.2
+# Skin Overlay Mod v7.1.2.1
 - Short description: Custom body, clothes and eye textures
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -904,9 +944,9 @@
 - More information:  https://github.com/ManlyMarco/IL_SliderHighlight
 
 # SpawnLocker v1.0.0
-- Short description: Lets you lock characters to always appear in free roam
-- Author(s):         ???
-- More information:  KK discord
+- Short description: Allows you to select certain characters that you want to always appear in free roam
+- Author(s):         IllusionMods
+- More information:  https://github.com/IllusionMods/KK_Plugins
 
 # Stiletto v2.4.2.1
 - Short description: Support for high heels(BETA, might cause issues)
@@ -1038,12 +1078,12 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# The Bird of Hermes v4.1.0.0
+# The Bird of Hermes v5.4.0.0
 - Short description: Timeline addon, allows loading an audio file, and get a waveform of the audio
 - Author(s):         Rinu Nalo
 - More information:  KK Discord/
 
-# Timeline v1.5.5
+# Timeline v1.5.5.1
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -1098,7 +1138,7 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# VideoExport v2.0.1
+# VideoExport v2.0.3
 - Short description: Video and gif recorder, press Ctrl+E(possible issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -1118,7 +1158,7 @@
 - Author(s):         GFanon
 - More information:  ???
 
-# XUnity Auto Translator v5.5.1
+# XUnity Auto Translator v5.6.1
 - Short description: Translation loader
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
