@@ -53,6 +53,11 @@
 - Author(s):         Njaecha
 - More information:  https://github.com/Njaecha/ANAL
 
+# AmazingNewBoneLogic v1.0.7
+- Short description: Pushup, but for legs
+- Author(s):         Hanaaa
+- More information:  KK Discord
+
 # Animation Controller v2.3
 - Short description: Allows attaching IK nodes to objects to create custom animations
 - Author(s):         DeathWeasel1337
@@ -153,6 +158,11 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
+# Box Select v1.1
+- Short description: Allows to select bones in a boundary area
+- Author(s):         RinuNalo
+- More information:  KK discord
+
 # BreastPhysicsController v2.2
 - Short description: Enables control of DynamicBone's some parameters for breasts
 - Author(s):         DeathWeasel
@@ -218,11 +228,6 @@
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/IllusionCheatTools
 
-# ClickToSelect v1.2.0
-- Short description: Allows selecting items in studio by clicking on them
-- Author(s):         ziglo
-- More information:  https://www.patreon.com/ziglomods/posts/clicktoselect-155523948
-
 # Cloth colliders support v1.1
 - Short description: Allows zipmods to easily add cloth physics to clothes
 - Author(s):         ManlyMarco
@@ -243,7 +248,7 @@
 - Author(s):         ???
 - More information:  ???
 
-# Clothing State Menu v5.2
+# Clothing State Menu v5.2.1
 - Short description: Can undress in chara maker and in H scenes
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_ClothingStateMenu
@@ -268,7 +273,7 @@
 - Author(s):         RinuNalo
 - More information:  KK Discord
 
-# Configuration Manager v18.4.1
+# Configuration Manager v19.0
 - Short description: Can change plugin settings. Press F1 to open, not visible inside HMD
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.ConfigurationManager
@@ -383,7 +388,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# FPS Counter v3.3.1
+# FPS Counter v3.3.2
 - Short description: Useful for performance testing
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/FPSCounter
@@ -408,7 +413,7 @@
 - Author(s):         GeBo1
 - More information:  https://github.com/GeBo1/GeBoPlugins
 
-# Graphics Settings v1.4
+# Graphics Settings v1.5
 - Short description: More game settings, allows better/worse quality
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.GraphicsSettings
@@ -458,7 +463,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionFixes
 
-# IllusionLaunchers v3.5.1.0
+# IllusionLaunchers v3.6.0.0
 - Short description: Custom game launcher
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
@@ -503,6 +508,16 @@
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
 
+# KK Sandbox - Anim Browser v1.3.0
+- Short description: A Studio tool that gathers every animation into a searchable category tree with a preview grid
+- Author(s):         SuitIThub
+- More information:  https://github.com/SuitIThub/HS2-Sandbox
+
+# KK Sandbox - Pose Browser v2.6.2
+- Short description: Provides a feature-rich UI for using Poses in CharaStudio
+- Author(s):         SuitIThub
+- More information:  https://github.com/SuitIThub/HS2-Sandbox
+
 # KKManager v1.11.0.0
 - Short description: Manage and update mods, browse cards
 - Author(s):         https://github.com/IllusionMods
@@ -513,7 +528,7 @@
 - Author(s):         RikkiBalboa
 - More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
 
-# KKS Better Penetration v5.0.1.5
+# KKS Better Penetration v5.1
 - Short description: Improves how penetration looks in H scenes
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
@@ -708,7 +723,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.46.1
+# Modding API v1.47
 - Short description: API needed for many plugins
 - Author(s):         ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -788,6 +803,11 @@
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins
 
+# PerspectiveX v1.3.4
+- Short description: POV plugin for Koikatsu that doesn't clip through the body and doesn't make you dizzy
+- Author(s):         Bucky
+- More information:  https://github.com/bani4kaskashka/KK_PerspectiveX
+
 # PictureInPicture v1.0.1
 - Short description: Adds small windows to the game that can display an Image or render a preview of a camera (Studio only)
 - Author(s):         Njaecha
@@ -863,20 +883,10 @@
 - Author(s):         Inabaeiji
 - More information:  https://github.com/Inabaeiji/RandomStatus
 
-# RealPOV v1.4.1.1
-- Short description: First person camera for H
-- Author(s):         RealPOV.KoikatsuSunshine
-- More information:  ???
-
 # Remove Cards To Recycle Bin v2.0
 - Short description: Prevents accidentally losing cards by overwriting them
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_RemoveToRecycleBin
-
-# RenameStuff v1.2.0
-- Short description: Allows renaming anything in your workspace window (right click)
-- Author(s):         ziglo
-- More information:  https://www.patreon.com/ziglomods/posts/renamestuff-for-154013619
 
 # Rim Remover v1.2
 - Short description: Can disable rim light for a flat game look
@@ -928,7 +938,7 @@
 - Author(s):         RikkiBalboa
 - More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
 
-# Shallty Utils v1.3
+# Shallty Utils v1.3.1
 - Short description: A utility plugin focused on enhancing Timeline to improve animator's workflows (may cause issues)
 - Author(s):         Shallty
 - More information:  ???
@@ -1078,12 +1088,12 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# The Bird of Hermes v5.4.0.0
+# The Bird of Hermes v5.5.1.0
 - Short description: Timeline addon, allows loading an audio file, and get a waveform of the audio
 - Author(s):         Rinu Nalo
 - More information:  KK Discord/
 
-# Timeline v1.5.5.1
+# Timeline v1.5.6
 - Short description: Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues)
 - Author(s):         joan6694
 - More information:  ???
@@ -1097,6 +1107,11 @@
 - Short description: Hotkeys in main menu; can automatically start maker
 - Author(s):         Keelhauled
 - More information:  https://github.com/Keelhauled/KeelPlugins
+
+# TOHYK v2.0.1
+- Short description: Blender like movement plugin
+- Author(s):         rnetiks
+- More information:  https://github.com/rnetiks/TOHYK
 
 # Translation Cache Cleaner v1.2.0.1
 - Short description: Hotkey to clean stale translations from cache
@@ -1113,7 +1128,7 @@
 - Author(s):         Njaecha
 - More information:  ???
 
-# TreeNodeOrdering v2.1.2
+# TreeNodeOrdering v3.0.0
 - Short description: Allows parenting and changing the order of TreeNodes in Studio
 - Author(s):         Njaecha
 - More information:  https://github.com/Njaecha/TreeNodeOrdering
@@ -1138,7 +1153,7 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
-# VideoExport v2.0.3
+# VideoExport v2.1.1
 - Short description: Video and gif recorder, press Ctrl+E(possible issues)
 - Author(s):         joan6694
 - More information:  ???

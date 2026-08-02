@@ -1,19 +1,19 @@
 [Components]
 Name: "BepInEx";                               Description: "BepInEx v5.4.23.5 (Plugin framework)"                                                 ; Types: full_en full extra_en extra custom bare; Flags: fixed
-Name: "BepInEx\ConfigurationManager";          Description: "Configuration Manager v18.4.1 (Can change plugin settings. Press F1 to open, not visible inside HMD)"; Types: full_en full extra extra_en custom bare; Flags: fixed
+Name: "BepInEx\ConfigurationManager";          Description: "Configuration Manager v19.0 (Can change plugin settings. Press F1 to open, not visible inside HMD)"; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "BepInEx\MessageCenter";                 Description: "Message Center v1.1.1.1 (Allows plugins to show messages in top left corner of the game)"; Types: full_en full extra extra_en custom bare; Flags: fixed
 Name: "BepInEx\BepInEx_CatchUnityEventExceptions"; Description: "Catch Unity Event Exceptions v1.0 (Prevents some bugs in plugins from affecting other plugins)"; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_SplashScreen";          Description: "BepInEx.SplashScreen v3.0.0.0 (A loading screen on game startup with information about patchers and plugins being currently loaded)"; Types: full_en full extra extra_en
 Name: "BepInEx\BepInEx_IMGUITextCursorFix";    Description: "IMGUITextCursorFix v1.0 (Addresses a bug present in certain Unity versions)"          ; Types: full_en full extra extra_en
 Name: "BepInEx\Dev";                           Description: "{cm:CompDev}"                                                                         
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: "IllusionLaunchers";                     Description: "IllusionLaunchers v3.5.1.0 (Custom game launcher)"                                    ; Types: full_en full extra extra_en custom
+Name: "IllusionLaunchers";                     Description: "IllusionLaunchers v3.6.0.0 (Custom game launcher)"                                    ; Types: full_en full extra extra_en custom
 Name: "KKManager";                             Description: "KKManager v1.11.0.0 (Manage and update mods, browse cards)"                           ; Types: full_en full extra extra_en custom bare; Flags: fixed
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "API";                                   Description: "Modding APIs (Necessary for other mods/plugins to work properly)"                     ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "API\ResourceRedirector";                Description: "XUnity Resource Redirector v2.1.0 (Modding API)"                                      ; Types: full_en full extra_en extra custom bare; Flags: fixed
 Name: "API\BepisPlugins";                      Description: "BepisPlugins v21.1.3 (Collection of essential plugins)"                               ; Types: full_en full extra_en extra custom bare; Flags: fixed
-Name: "API\KKSAPI";                            Description: "Modding API v1.46.1 (API needed for many plugins)"                                    ; Types: full_en full extra extra_en
+Name: "API\KKSAPI";                            Description: "Modding API v1.47 (API needed for many plugins)"                                      ; Types: full_en full extra extra_en
 Name: "API\KKS_ModBoneImplantor";              Description: "Mod Bone Implantor v1.1.2 (Needed by some clothing mods to add dynamic bones)"        ; Types: full_en full extra extra_en
 Name: "API\AnimationLoader_KoikatsuSunshine";  Description: "Animation Loader v1.1.3.4 (A plugin for loading animations from Sideloader zipmods)"  ; Types: full_en full extra extra_en
 Name: "API\GeBoCommon";                        Description: "GeBo Modding API v1.2.0.1 (Modding API necessary for plugins by GeBo)"                ; Types: full_en full extra extra_en
@@ -29,7 +29,7 @@ Name: "AT\TL\KKS_Subtitles";                   Description: "Subtitles v2.3.2 (M
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "UNC";                                   Description: "{cm:CompUNC}"                                                                         ; Types: full_en full extra_en extra
 Name: "UNC\Selector";                          Description: "Uncensor Selector v3.12.3 (NEEDS Koikatsu overlay mods!)"                             ; Types: full_en full extra_en extra
-Name: "UNC\Selector\KKS_BetterPenetration";    Description: "KKS Better Penetration v5.0.1.5 (Improves how penetration looks in H scenes)"         ; Types: full_en full extra extra_en
+Name: "UNC\Selector\KKS_BetterPenetration";    Description: "KKS Better Penetration v5.1 (Improves how penetration looks in H scenes)"             ; Types: full_en full extra extra_en
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "Content";                               Description: "Additional content for character and scene creation (Needed to properly load many character cards and scenes)"; Types: full_en full extra_en extra
 Name: "Content\KKSABMX";                       Description: "KKSABMX (BonemodX) v5.4 (Adds additional sliders to character maker)"                 ; Types: full_en full extra extra_en
@@ -61,7 +61,7 @@ Name: "Content\KSOX\KKS_SkinEffects";          Description: "Additional Skin Eff
 Name: "Content\MoreAccessories";               Description: "MoreAccessories v2.0.21.1 (Unlocks accessory limit)"                                  ; Types: full_en full extra_en extra
 Name: "Content\MoreAccessories\KKS_MoreAccessoryParents"; Description: "More Accessory Parents v2.0.1 (Adds additional attachment points for accessories)"    ; Types: full_en full extra extra_en
 Name: "Content\NodesConstraints";              Description: "NodesConstraints v1.6.3 (Create custom animations in studio(possible issues)"         ; Types: full_en full extra extra_en
-Name: "Content\Timeline";                      Description: "Timeline v1.5.5.1 (Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues))"; Types: full_en full extra extra_en
+Name: "Content\Timeline";                      Description: "Timeline v1.5.6 (Advanced animation editor for Studio (Ctrl+T, read the Help)(possible issues))"; Types: full_en full extra extra_en
 Name: "Content\KKS_SaveCameraObjectFov";       Description: "SaveCameraObjectFov v1.0 (Saves FoV values to placed camera objects)"                 ; Types: full_en full extra extra_en
 Name: "Content\KKS_PostProcessingEffect";      Description: "PostProcessingEffects v4.5 (Adds additional post processing options in the F1 Plugins menu)"; Types: full_en full extra extra_en
 Name: "Content\DisableHipDynamicBones";        Description: "DisableHipDynamicBones v1.0 (Lets some zipmods turn off dynamic hip bones)"           ; Types: full_en full extra extra_en
@@ -80,6 +80,7 @@ Name: "Content\MaterialEditorClipboard_KoikatsuSunshine"; Description: "Material
 Name: "Content\StudioItemIK";                  Description: "KKS_StudioItemIK v0.2.0 (Allows you to add FabrikIK support to any studio item with a single chain of bones)"; Types: full_en full extra extra_en
 Name: "Content\ButtPhysicsEditor";             Description: "Butt Physics Editor v1.1 (Butt Physics Editor for Koikatsu)"                          ; Types: full_en full extra extra_en
 Name: "Content\PoseLib_KKS";                   Description: "PoseLibrary v1.4.0 (Allows to save character poses as cards, or load them)"           ; Types: full_en full extra extra_en
+Name: "Content\AmazingNewBoneLogic";           Description: "AmazingNewBoneLogic v1.0.7 (Pushup, but for legs)"                                    ; Types: full_en full extra extra_en
 Name: "Content\AnisotropicMorph";              Description: "Anisotropic Morph v0.25 (An ABMX Plugin that applies a variety of highly customizable effects to a variety of bones)"
 Name: "Content\MuneRestoration";               Description: "MuneRestoration v1.0.0 (Restores the Mune00 bones which are the root FK handles for breasts in studio)"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -109,7 +110,7 @@ Name: "Feature\KKS_BrowserFolders";            Description: "Maker/Studio Browse
 Name: "Feature\KKS_CharaMakerLoadedSound";     Description: "Character Maker Loaded Sound v1.0 (Maker makes a sound when loading is finished)"     ; Types: full_en full extra extra_en
 Name: "Feature\KKS_ClothColliders";            Description: "Cloth colliders support v1.1 (Allows zipmods to easily add cloth physics to clothes)" ; Types: full_en full extra extra_en
 Name: "Feature\KKS_ClothingBlendShape";        Description: "Clothing BlendShape v1.0.2 (Adds the option to adjust the amount of squeeze for certain modded items)"; Types: full_en full extra extra_en
-Name: "Feature\KKS_ClothingStateMenu";         Description: "Clothing State Menu v5.2 (Can undress in chara maker and in H scenes)"                ; Types: full_en full extra extra_en
+Name: "Feature\KKS_ClothingStateMenu";         Description: "Clothing State Menu v5.2.1 (Can undress in chara maker and in H scenes)"              ; Types: full_en full extra extra_en
 Name: "Feature\KKS_Colliders";                 Description: "Colliders v1.3.1 (Add physics to characters)"                                         ; Types: full_en full extra extra_en
 Name: "Feature\KKS_CoordinateLoadOption";      Description: "Coordinate Load Option v21.12.23.0 (Can load only specific parts of outfits)"         ; Types: full_en full extra extra_en
 Name: "Feature\DragAndDrop";                   Description: "Drag and Drop v1.3.1 (Drag cards and scenes from explorer into game window)"          ; Types: full_en full extra extra_en
@@ -138,7 +139,7 @@ Name: "Feature\KKS_MakerRandomPicker";         Description: "MakerRandomPicker v
 Name: "Feature\KKS_MakerSearch";               Description: "MakerSearch v1.5.1 (Search boxes in character maker item lists)"                      ; Types: full_en full extra extra_en
 Name: "Feature\KKS_MoanSoftly";                Description: "Moan softly when I H you v1.0.1 (Quieter breathing in H scenes, automatically gets louder as excitement increases)"; Types: full_en full extra extra_en
 Name: "Feature\KKS_MoreShopItems";             Description: "More Shop Items v2.1.2 (Adds new items with various effects to be bought in the store)"; Types: full_en full extra extra_en
-Name: "Feature\GraphicsSettings";              Description: "Graphics Settings v1.4 (More game settings, allows better/worse quality)"             ; Types: full_en full extra_en extra
+Name: "Feature\GraphicsSettings";              Description: "Graphics Settings v1.5 (More game settings, allows better/worse quality)"             ; Types: full_en full extra_en extra
 Name: "Feature\KKS_OrthographicCamera";        Description: "Orthographic Camera v1.1.2 (Orthographic camera mode, press I by default)"            ; Types: full_en full extra extra_en
 Name: "Feature\KKS_PantyFairy";                Description: "PantyFairy v1.0.2 (A custom side quest for Koikatsu with some new gameplay features)" ; Types: full_en full extra extra_en
 Name: "Feature\KKS_PoseTools";                 Description: "Pose Tools v1.1.3 (Important for loading new poses with previews)"                    ; Types: full_en full extra extra_en
@@ -156,8 +157,7 @@ Name: "Feature\KKS_VR";                        Description: "KKS_VR v2.7 (Allows
 Name: "Feature\KoikatsuSunshine_CharacterReplacer"; Description: "Character Replacer v1.7 (Allows you to replace the default male and female in the character maker)"; Types: full_en full extra extra_en
 Name: "Feature\LockOnPlugin_KoikatuSunshine";  Description: "LockOnPlugin v2.7.0.1 (Hotkey to make camera keep focus on character)"                ; Types: full_en full extra extra_en
 Name: "Feature\MuteInBackground";              Description: "Mute In Background v1.1 (Mute the game when it's not in focus, turn on in plugin settings)"; Types: full_en full extra_en extra
-Name: "Feature\RealPOV_KoikatsuSunshine";      Description: "RealPOV v1.4.1.1 (First person camera for H)"                                         ; Types: full_en full extra extra_en
-Name: "Feature\VideoExport";                   Description: "VideoExport v2.0.3 (Video and gif recorder, press Ctrl+E(possible issues))"           ; Types: full_en full extra extra_en
+Name: "Feature\VideoExport";                   Description: "VideoExport v2.1.1 (Video and gif recorder, press Ctrl+E(possible issues))"           ; Types: full_en full extra extra_en
 Name: "Feature\TitleShortcuts";                Description: "Title shortcuts v1.3.1.1 (Hotkeys in main menu; can automatically start maker)"       ; Types: full_en full extra_en extra
 Name: "Feature\FreeHDefaults";                 Description: "Free H Defaults v2.0.2.1 (Keeps free H selection screen settings)"                    ; Types: full_en full extra extra_en
 Name: "Feature\KKS_HairShadowColorControl";    Description: "HairShadowColorControl v1.0 (Convenient controls for changing the shadow color of character hair in maker.)"; Types: full_en full extra extra_en
@@ -166,6 +166,7 @@ Name: "Feature\BetterScaling_KoikatuSunshine"; Description: "Better Scaling v1.2
 Name: "Feature\ShaderFixer_KoikatsuSunshine";  Description: "Koikatsu Shader Fixer v1.2.0.9 (Fixes the weird normal map behaviour of the KKUSS / KKUTS shaders when used in Sunshine)"; Types: full_en full extra extra_en
 Name: "Feature\ClothCycler";                   Description: "ClothCycler v1.0.0 (Allows cycling the state of clothing pieces by double rightclicking parts of the body)"; Types: full_en full extra extra_en
 Name: "Feature\UIScalerAndWidescreenSupport";  Description: "UIScalerAndWidescreenSupport v1.0.3 (Allows widescreen and UI scaling)"               ; Types: full_en full extra extra_en
+Name: "Feature\PerspectiveX";                  Description: "PerspectiveX v1.3.4 (POV plugin for Koikatsu that doesn't clip through the body and doesn't make you dizzy)"; Types: full_en full extra extra_en
 ; Studio
 Name: "Feature\AutoKeyframe";                  Description: "Auto Keyframe v1.3.0.0 (Automatically updates any keyframes in Timeline that you change)"; Types: full_en full extra extra_en
 Name: "Feature\RSkoi_ComponentUtil_KKS";       Description: "RSkoi_ComponentUtil v1.5.0 (Allows for inspection and editing of primitive types on components within a scene. KKS version.)"; Types: extra extra_en
@@ -207,12 +208,14 @@ Name: "Feature\MoarCamz";                      Description: "MoarCamz v1.0.8 (Al
 Name: "Feature\KKS_StudioSkinColorControl";    Description: "StudioSkinColorControl v1.0 (Allows controlling skin/suntan/hair color, bust softness/weight)"; Types: full_en full extra extra_en
 Name: "Feature\KKS_ShadowColorSwapper";        Description: "ShadowColorSwapper v1.2 (Swap shadow colors to a configured value at the press of a keybind)"; Types: full_en full extra extra_en
 Name: "Feature\StudioCharaSort";               Description: "Studio Character Sort v1.0.1 (Change default sort order of cards in studio)"          ; Types: full_en full extra extra_en
-Name: "Feature\TreeNodeOrdering";              Description: "TreeNodeOrdering v2.1.2 (Allows parenting and changing the order of TreeNodes in Studio)"; Types: full_en full extra extra_en
+Name: "Feature\TreeNodeOrdering";              Description: "TreeNodeOrdering v3.0.0 (Allows parenting and changing the order of TreeNodes in Studio)"; Types: full_en full extra extra_en
 Name: "Feature\KKS_StudioTextPlugin";          Description: "Studio Text Plugin v21.10.23.0 (Allows writing text as studio objects)"               ; Types: full_en full extra_en extra
-Name: "Feature\TheBirdOfHermes_KKS";           Description: "The Bird of Hermes v5.4.0.0 (Timeline addon, allows loading an audio file, and get a waveform of the audio)"; Types: full_en full extra extra_en
+Name: "Feature\TheBirdOfHermes_KKS";           Description: "The Bird of Hermes v5.5.1.0 (Timeline addon, allows loading an audio file, and get a waveform of the audio)"; Types: full_en full extra extra_en
 Name: "Feature\Compositor_KKS";                Description: "Compositor v1.2.0 (A Blender-like node compositor, that runs insideStudio)"           ; Types: extra extra_en
-Name: "Feature\ziglo_RenameStuff";             Description: "RenameStuff v1.2.0 (Allows renaming anything in your workspace window (right click))" ; Types: extra extra_en
-Name: "Feature\ziglo_ClickToSelect";           Description: "ClickToSelect v1.2.0 (Allows selecting items in studio by clicking on them)"          ; Types: extra extra_en
+Name: "Feature\TOHYK";                         Description: "TOHYK v2.0.1 (Blender like movement plugin)"                                          ; Types: extra extra_en
+Name: "Feature\KKSandbox_PoseBrowser";         Description: "KK Sandbox - Pose Browser v2.6.2 (Provides a feature-rich UI for using Poses in CharaStudio)"; Types: extra extra_en
+Name: "Feature\KKSandbox_AnimBrowser";         Description: "KK Sandbox - Anim Browser v1.3.0 (A Studio tool that gathers every animation into a searchable category tree with a preview grid)"; Types: extra extra_en
+Name: "Feature\BoxSelect_KKS";                 Description: "Box Select v1.1 (Allows to select bones in a boundary area)"                          ; Types: extra extra_en
 ; Extra
 Name: "Feature\BetterSceneLoader_KoikatuSunshine"; Description: "BetterSceneLoader v1.1.1.1 (An alternative scene loader for Studio.)"                 ; Types: extra extra_en
 Name: "Feature\SceneEffectsExtended";          Description: "SceneEffectsExtended v1.0 (Exposes more settings in the Scene Effects tab)"           ; Types: extra extra_en
@@ -228,7 +231,7 @@ Name: "Feature\KKS_ExpressionControl";         Description: "ExpressionControl v
 Name: "Feature\KKS_BirbExcitementGauge";       Description: "Birb's Excitement Gauge v1.1 (Links the animation speed to excitement gain in H mods)"; Types: extra extra_en
 Name: "Feature\ColliderSound_KKS";             Description: "ColliderSound v1.2 (Allows to play a selected .wav soundfile, if an object is a specified distance from another object)"; Types: extra extra_en
 Name: "Feature\KKS_SexFaces";                  Description: "Sex Faces v1.0.0 (Adds the ability to set custom facial expressions to be displayed during H scenes)"
-Name: "Feature\KKS_ShalltyUtils";              Description: "Shallty Utils v1.3 (A utility plugin focused on enhancing Timeline to improve animator's workflows (may cause issues))"
+Name: "Feature\KKS_ShalltyUtils";              Description: "Shallty Utils v1.3.1 (A utility plugin focused on enhancing Timeline to improve animator's workflows (may cause issues))"
 Name: "Feature\KKS_CrossFader";                Description: "CrossFader v0.2.5.1 (Interpolates position changes in H scenes instead of fading)"    
 Name: "Feature\KKS_TreeNodeNaming";            Description: "TreeNodeNaming v1.2.0 (Allows the renaming of nodes in studio treeview)"              
 Name: "Feature\KKS_IntroBegone";               Description: "Intro Begone v1.1 (Speeds up game startup by skipping the intro screen)"              
@@ -244,7 +247,7 @@ Name: "Feature\KKS_Kokyu";                     Description: "Breath (Kokyu) v1.0
 Name: "Feature\KKS_Blink";                     Description: "Blink v1.0.0 (Modifies character's blinking (aimed at VR))"                           
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: "MISC";                                  Description: "{cm:CompMISC}"                                                                        
-Name: "MISC\FPS";                              Description: "FPS Counter v3.3.1 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
+Name: "MISC\FPS";                              Description: "FPS Counter v3.3.2 (Useful for performance testing)"                                  ; Types: full_en full extra extra_en
 Name: "MISC\FIX";                              Description: "Fix game registry (e.g. after moving to different folder)"                            ; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor";               Description: "RuntimeUnityEditor v6.3 (Debugging and development tool)"                             ; Types: full_en full extra extra_en
 Name: "MISC\RuntimeUnityEditor\Trainer";       Description: "Cheat Tools v3.6.1 (In-game trainer/debugging plugin)"                                ; Types: full_en full extra extra_en
@@ -332,6 +335,7 @@ Source: "Input\_Plugins\_out\KKS_ButtPhysicsEditor\*";      DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\KKS_StudioItemIK\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\StudioItemIK; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\PoseLib.KKS\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\PoseLib_KKS; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\MuneRestoration_KKS\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\MuneRestoration; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\KKS_AmazingNewBoneLogic\*";    DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Content\AmazingNewBoneLogic; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\IllusionFixes_KoikatsuSunshine\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: FIX\IllusionFixes_KoikatsuSunshine; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\BepInEx.InputHotkeyBlock\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: FIX\InputHotkeyBlock; Excludes: "manifest.xml"
@@ -362,7 +366,6 @@ Source: "Input\_Plugins\_out\KKS_ItemBlacklist\*";          DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\KKS_MakerDefaults\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_MakerDefaults; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_Profile\*";                DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_Profile; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_Pushup\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_Pushup; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\RealPOV.KoikatsuSunshine\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\RealPOV_KoikatsuSunshine; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_BetterColorPicker\*";      DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_BetterColorPicker; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_CoordinateLoadOption\*";   DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_CoordinateLoadOption; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_AnimationOverdrive\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_AnimationOverdrive; Excludes: "manifest.xml"
@@ -486,8 +489,11 @@ Source: "Input\_Plugins\_out\Compositor.KKS\*";             DestDir: "{app}"; Fl
 Source: "Input\_Plugins\_out\KKS_Blink\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_Blink; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_Kokyu\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKS_Kokyu; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_RandomStatus\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\RandomStatus; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\ziglo_ClickToSelect\*";        DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\ziglo_ClickToSelect; Excludes: "manifest.xml"
-Source: "Input\_Plugins\_out\ziglo_RenameStuff\*";          DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\ziglo_RenameStuff; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\KKSSandbox.AnimBrowser\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKSandbox_AnimBrowser; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\KKSSandbox.PoseBrowser\*";     DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\KKSandbox_PoseBrowser; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\KKS_PerspectiveX\*";           DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\PerspectiveX; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\TOHYK.KKS\*";                  DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\TOHYK; Excludes: "manifest.xml"
+Source: "Input\_Plugins\_out\BoxSelect.KKS\*";              DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: Feature\BoxSelect_KKS; Excludes: "manifest.xml"
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "Input\_Plugins\_out\FPSCounter\*";                 DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\FPS; Excludes: "manifest.xml"
 Source: "Input\_Plugins\_out\KKS_CheatTools\*";             DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs; Components: MISC\RuntimeUnityEditor\Trainer; Excludes: "manifest.xml"
