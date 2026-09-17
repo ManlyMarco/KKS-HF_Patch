@@ -7,7 +7,7 @@
 ;-------------Full game name for naming patch itself and desktop icons
 #define NAME "Koikatsu Sunshine"
 ;---------------------------------------------Current HF Patch version
-#define VERSION "2.1"
+#define VERSION "2.2"
 ;-----------------------------------------Sideloader modpack directory
 #define GameDir "L:\HFpatchmaking\KK\MODSOURCE"
 ;#define GameDir "F:\Games\KoikatsuP"
@@ -16,7 +16,7 @@
 ;---Skip file verification for easier testing, COMMENT OUT FOR RELEASE
 ;#define NOVERIFY
 ;------------Don't include general, studio and map sideloader modpacks
-#define LITE
+;#define LITE
 ;--------------------------------------------------------Configuration
 ; The main executable name without the .exe
 #define GameName "KoikatsuSunshine"
@@ -111,6 +111,7 @@ Source: "{#GameDir}\mods\Sideloader Modpack - Animations\*";         DestDir: "{
 Source: "{#GameDir}\mods\Sideloader Modpack - KKS_Fixes\*";           DestDir: "{app}\mods\Sideloader Modpack - KKS_Fixes";               Flags: ignoreversion recursesubdirs; Components: Modpack\Fixes
 Source: "{#GameDir}\mods\Sideloader Modpack - KK_MaterialEditor\*";   DestDir: "{app}\mods\Sideloader Modpack - KK_MaterialEditor";   Flags: ignoreversion recursesubdirs; Components: Modpack\MaterialEditor
 Source: "{#GameDir}\mods\Sideloader Modpack - KKS_UncensorSelector\*";DestDir: "{app}\mods\Sideloader Modpack - KKS_UncensorSelector"; Flags: ignoreversion recursesubdirs; Components: Modpack\UncensorSelector
+Source: "{#GameDir}\mods\MyMods\*";                                   DestDir: "{app}\mods\MyMods"; Flags: ignoreversion recursesubdirs; 
 ; -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Source: "{#GameDir}\BepInEx\cache\sideloader_zipmod_cache.bin*"; DestDir: "{app}\BepinEx\cache"; Flags: ignoreversion recursesubdirs createallsubdirs;           
 ; Make sure this is never missing in case the plugin archive doesn't have it included. Also solidbreak to split off the modpacks
@@ -147,6 +148,7 @@ Source: "Input\US_config_BP.cfg";                   DestDir: "{app}\BepInEx\conf
 ;-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ; Other default config
 Source: "Input\marco.kkapi.cfg";                    DestDir: "{app}\BepInEx\config"; DestName: "marco.kkapi.cfg";        Flags: onlyifdoesntexist
+Source: "Input\Mods_readme.txt";                    DestDir: "{app}\mods"; DestName: "Mods_readme.txt"; Flags: onlyifdoesntexist solidbreak
 Source: "Input\AniMorph.ABMX.cfg";                  DestDir: "{app}\BepInEx\config"; DestName: "AniMorph.ABMX.cfg";      Flags: solidbreak;   Components: Content\AnisotropicMorph
 Source: "Input\essuhauled.animationloader.cfg";                  DestDir: "{app}\BepInEx\config"; DestName: "essuhauled.animationloader.cfg";      Flags: solidbreak;   Components: API\AnimationLoader_KoikatsuSunshine
 Source: "Input\KK_PregnancyPlus.cfg";                  DestDir: "{app}\BepInEx\config"; DestName: "KK_PregnancyPlus.cfg";      Flags: solidbreak;   Components: Content\KKSABMX\KKS_PregnancyPlus
@@ -243,6 +245,12 @@ end;
 function EXInstalled(): Boolean;
 begin
   Result := FileExists(ExpandConstant('{app}\abdata\add70'));
+end;
+
+
+function PseudoMaker(): Boolean;
+begin
+ Result := WizardIsComponentSelected('Feature\KKS_Pushup') and WizardIsComponentSelected('Content\MoreAccessories') and WizardIsComponentSelected('Content\KKS_HairAccessoryCustomizer') and WizardIsComponentSelected('Content\KKS_MaterialEditor') and WizardIsComponentSelected('Content\KKS_MoreOutfits') and WizardIsComponentSelected('API\KKSAPI')
 end;
 
 // --------------------------------------------------------------------------------------- Installation Events

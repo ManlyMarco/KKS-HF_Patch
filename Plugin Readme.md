@@ -113,7 +113,7 @@
 - Author(s):         BepInEx
 - More information:  https://github.com/BepInEx/BepInEx.SplashScreen
 
-# BepisPlugins v21.1.3
+# BepisPlugins v21.1.4
 - Short description: Collection of essential plugins
 - Author(s):         bbepis
 - More information:  https://github.com/bbepis/BepisPlugins
@@ -468,7 +468,7 @@
 - Author(s):         https://github.com/IllusionMods
 - More information:  https://github.com/IllusionMods/IllusionLaunchers
 
-# Image Embed v1.0.3
+# Image Embed v1.0.4
 - Short description: Embeds custom images in scene files so others can load them
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -533,7 +533,7 @@
 - Author(s):         Animal42069
 - More information:  https://www.patreon.com/Animal42069
 
-# KKS_AssetImport v3.1.0
+# KKS_AssetImport v4.0.1
 - Short description: Lets you import 3D assets into the game
 - Author(s):         NJaecha
 - More information:  https://github.com/NiggoJaecha/AssetImport
@@ -558,7 +558,7 @@
 - Author(s):         Starstorm
 - More information:  KK Discord
 
-# KKS_VR v2.7
+# KKS_VR v2.7.1
 - Short description: Allows you to play both the main game and studio in VR
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/KKS_VR
@@ -648,7 +648,7 @@
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
 
-# Maker/Studio Browser Folders v4.0.1
+# Maker/Studio Browser Folders v4.0.2
 - Short description: Folder support in chara/scene select screens
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion_BrowserFolders
@@ -693,7 +693,7 @@
 - Author(s):         Starstorm
 - More information:  https://github.com/starstormhun/StarPlugins/
 
-# Material Editor v4.0.3
+# Material Editor v5.0
 - Short description: Adds advanced material controls to maker and studio
 - Author(s):         DeathWeasel1337
 - More information:  https://github.com/DeathWeasel1337/KK_Plugins
@@ -723,7 +723,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/ModBoneImplantor
 
-# Modding API v1.47
+# Modding API v1.48
 - Short description: API needed for many plugins
 - Author(s):         ManlyMarco
 - More information:  https://github.com/IllusionMods/IllusionModdingAPI
@@ -898,7 +898,7 @@
 - Author(s):         RSkoi
 - More information:  https://github.com/RSkoi/ComponentUtil
 
-# RuntimeUnityEditor v6.3
+# RuntimeUnityEditor v6.3.1
 - Short description: Debugging and development tool
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/RuntimeUnityEditor
@@ -943,7 +943,7 @@
 - Author(s):         Shallty
 - More information:  ???
 
-# Skin Overlay Mod v7.1.2.1
+# Skin Overlay Mod v7.1.3
 - Short description: Custom body, clothes and eye textures
 - Author(s):         ManlyMarco
 - More information:  https://github.com/ManlyMarco/Illusion-Overlay-Mods
@@ -1053,6 +1053,11 @@
 - Author(s):         Mantas-2155X aka 2155X
 - More information:  https://www.patreon.com/2155X
 
+# StudioPseudoMaker v1.5.2.0
+- Short description: Brings most maker functionality to studio
+- Author(s):         RikkiBalboa
+- More information:  https://github.com/RikkiBalboa/Rikki-Koi-Plugins
+
 # StudioSceneSettings v1.3.2
 - Short description: Adds more effect settings for scenes
 - Author(s):         DeathWeasel1337
@@ -1088,7 +1093,7 @@
 - Author(s):         IllusionMods
 - More information:  https://github.com/IllusionMods/TranslationTools
 
-# The Bird of Hermes v5.5.1.0
+# The Bird of Hermes v5.6.0
 - Short description: Timeline addon, allows loading an audio file, and get a waveform of the audio
 - Author(s):         Rinu Nalo
 - More information:  KK Discord/
@@ -1122,11 +1127,6 @@
 - Short description: Extension for AT, needed for some translations
 - Author(s):         GeBo1
 - More information:  https://github.com/GeBo1/GeBoPlugins
-
-# TreeNodeNaming v1.2.0
-- Short description: Allows the renaming of nodes in studio treeview
-- Author(s):         Njaecha
-- More information:  ???
 
 # TreeNodeOrdering v3.0.0
 - Short description: Allows parenting and changing the order of TreeNodes in Studio
@@ -1173,7 +1173,7 @@
 - Author(s):         GFanon
 - More information:  ???
 
-# XUnity Auto Translator v5.6.1
+# XUnity Auto Translator v5.6.2
 - Short description: Translation loader
 - Author(s):         bbepis and others
 - More information:  https://github.com/bbepis/XUnity.AutoTranslator
